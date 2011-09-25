@@ -1,0 +1,5 @@
+<screen position="40,40" size="440,70" title=" " flags="wfNoBorder">
+	<widget name="shift" position="10,30" size="430,22" font="Regular;21" />
+	<widget name="fps" position="10,50" size="430,22" font="Regular;21" />
+	<widget name="ttime" position="10,10" size="430,22" font="Regular;21" />
+</screen>

@@ -1,0 +1,14 @@
+button left ---- previous line
+button right -- next line
+button OK ---- next line
+button up ----- 10 lines back
+button down - 10 lines forward
+
+button 1 ------ slowing down subtitle speed by -5ms
+button 3 ------ speeding up subtitle speed by +5ms
+button 4 ------ slowing down subtitle speed by -25ms
+button 6 ------ speeding up subtitle speed by +25ms
+
+button 5 ------ moves subtitle to current EPG time
+button 7 ------ moves subtitle to position it was before you left the plugin
+button 9 ------ returns subtitle to position it was before and adds expired EPG time

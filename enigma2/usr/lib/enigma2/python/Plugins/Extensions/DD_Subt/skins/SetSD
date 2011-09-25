@@ -1,0 +1,13 @@
+<screen position="center,center" size="520,500" title="" backgroundColor="transparent" flags="wfNoBorder">
+	<ePixmap position="0,0" size="520,500" zPosition="-1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sbg1-sd.png" />
+	<eLabel text="Settings" position="25,12" size="470,23" font="Regular;21" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1"/>
+	<eLabel position="20,45" size="480,1" backgroundColor="white" />
+	<widget name="liste" position="21,70" size="475,300" itemHeight="24" scrollbarMode="showOnDemand" backgroundColor="background" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/ddsel.png" transparent="1" />
+	<eLabel position="20,345" size="480,1"  backgroundColor="white" />
+	<ePixmap position="305,350" size="200,115" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sp.png" alphatest="on" />
+	<ePixmap position="22,355" size="280,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/bb.png" alphatest="on"/>
+	<ePixmap position="22,395" size="280,40" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/by.png" alphatest="on" />
+	<widget name="titfolder" position="22,310" size="479,25" font="Regular;20" transparent="1" zPosition="1" />
+	<widget name="key_blue" position="22,355" size="280,40" font="Regular;20" zPosition="1" halign="center" backgroundColor="background" transparent="1"/>
+	<widget name="key_yellow" position="37,400" size="250,30" font="Regular;20" zPosition="1" halign="center" backgroundColor="background" transparent="1" />
+</screen>

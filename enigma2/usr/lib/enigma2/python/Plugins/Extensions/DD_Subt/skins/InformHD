@@ -1,0 +1,93 @@
+<screen position="center,80" size="1180,130" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
+	<ePixmap position="0,0" size="1180,130" zPosition="-1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sbgb.png" />
+	<eLabel position="180,10" size="2,110" backgroundColor="white" />
+	<widget source="session.Event_Now" render="Label" position="190,9" size="70,24" font="Regular;24" halign="right" backgroundColor="background" transparent="1">
+		<convert type="EventTime">StartTime</convert>
+		<convert type="ClockToText">Default</convert>
+	</widget>
+	<eLabel text="-" position="260,9" size="15,24" font="Regular;24" halign="center" backgroundColor="background" foregroundColor="grey" transparent="1" />
+	<widget source="session.Event_Now" render="Label" position="275,9" size="70,24" font="Regular;24" halign="left" backgroundColor="background" transparent="1">
+		<convert type="EventTime">EndTime</convert>
+		<convert type="ClockToText">Default</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="350,9" size="450,26" font="Regular;24" noWrap="1" backgroundColor="background" transparent="1">
+		<convert type="ServiceName">Name</convert>		
+	</widget>
+	<widget source="session.Event_Now" render="Label" position="800,5" size="110,25" font="Regular;23" backgroundColor="background" halign="right" transparent="1">
+		<convert type="EventTime">Remaining</convert>
+		<convert type="RemainingToText">InMinutes</convert>
+	</widget>
+	<widget source="session.Event_Now" render="Progress" position="820,31" size="90,6" borderWidth="1" borderColor="#cccccc" backgroundColor="background" transparent="1">
+		<convert type="EventTime">Progress</convert>
+	</widget>
+	<widget source="session.Event_Now" render="Label" position="205,48" size="560,30" font="Regular;28" backgroundColor="background" transparent="1">
+		<convert type="EventName">Name</convert>
+	</widget>
+	<widget source="session.Event_Next" render="Label" position="200,93" size="60,20" font="Regular;20" halign="right" backgroundColor="background" foregroundColor="grey" transparent="1">
+		<convert type="EventTime">StartTime</convert>
+		<convert type="ClockToText">Default</convert>
+	</widget>
+	<eLabel text="-" position="260,93" size="15,20" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="grey" transparent="1" />
+	<widget source="session.Event_Next" render="Label" position="275,93" size="60,20" font="Regular;20" halign="left" backgroundColor="background" foregroundColor="grey" transparent="1">
+		<convert type="EventTime">EndTime</convert>
+		<convert type="ClockToText">Default</convert>
+	</widget>
+	<eLabel text="(" position="335,93" size="10,20" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="grey" transparent="1" />
+	<widget source="session.Event_Next" render="Label" position="350,93" size="88,20" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="grey" transparent="1">
+		<convert type="EventTime">Duration</convert>
+		<convert type="ClockToText">InMinutes</convert>
+	</widget>
+	<eLabel text=")" position="455,93" size="10,20" font="Regular;20" halign="center" backgroundColor="background" foregroundColor="grey" transparent="1" />
+	<widget source="session.Event_Next" render="Label" position="455,93" size="310,25" font="Regular;22" halign="left" backgroundColor="background" foregroundColor="grey" transparent="1">
+		<convert type="EventName">Name</convert>
+	</widget>
+	<eLabel position="930,10" size="2,110" backgroundColor="white" />
+	<widget source="global.CurrentTime" render="Label" position="945,10" size="120,24" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+		<convert type="ClockToText">Format:%d.%m.%Y</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="1075,10" size=" 70,24" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1">
+		<convert type="ClockToText">Default</convert>
+	</widget>
+	<eLabel text="SNR:" position="975,42" size="50,20" font="Regular;19" backgroundColor="black" foregroundColor="grey" transparent="1" />
+	<widget source="session.FrontendStatus" render="Label" position="1025,42" size="90,20" font="Regular;19" backgroundColor="black" transparent="1">
+		<convert type="FrontendInfo">SNRdB</convert>
+	</widget>
+	<eLabel text="BER:" position="975,67" size="50,20" font="Regular;19" backgroundColor="black" foregroundColor="grey" transparent="1" noWrap="1" />
+	<widget source="session.FrontendStatus" render="Label" position="1025,67" size="120,20" font="Regular;19" backgroundColor="black" transparent="1" noWrap="1">
+		<convert type="FrontendInfo">BER</convert>
+	</widget>
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_d_off.png" position="940,92" size="57,20" zPosition="1" alphatest="blend" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_d_on.png" position="940,92" size="57,20" zPosition="2" alphatest="blend">
+		<convert type="ServiceInfo">IsMultichannel</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_f_off.png" position="1007,92" size="36,20" zPosition="1" alphatest="blend" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_f_on.png" position="1007,92" size="36,20" zPosition="2" alphatest="blend">
+		<convert type="ServiceInfo">IsWidescreen</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_t_off.png" position="1048,92" size="33,20" zPosition="1" alphatest="blend" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_t_on.png" position="1048,92" size="33,20" zPosition="2" alphatest="blend">
+		<convert type="ServiceInfo">HasTelext</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_h_off.png" position="1091,92" size="29,20" zPosition="1" alphatest="blend">
+		<convert type="ServiceInfo">VideoWidth</convert>
+		<convert type="ValueRange">0,720</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_h_on.png" position="1091,92" size="29,20" zPosition="2" alphatest="blend">
+		<convert type="ServiceInfo">VideoWidth</convert>
+		<convert type="ValueRange">721,1980</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_c_off.png" position="1125,92" size="26,20" zPosition="1" alphatest="blend" />
+	<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/dd_c_on.png" position="1125,92" size="26,20" zPosition="2" alphatest="blend">
+		<convert type="ServiceInfo">IsCrypted</convert>
+		<convert type="ConditionalShowHide" />
+	</widget>
+	<widget name="ttime" position="765,45" size="150,20" font="Regular;18" backgroundColor="background" transparent="1" />
+	<widget name="fps" position="765,70" size="150,20" font="Regular;18" backgroundColor="background" transparent="1" />
+	<widget name="shift" position="765,95" size="150,20" font="Regular;18" backgroundColor="background" transparent="1" />
+	<ePixmap position="0,0" size="200,115" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sp.png" transparent="1" alphatest="on" />
+</screen>

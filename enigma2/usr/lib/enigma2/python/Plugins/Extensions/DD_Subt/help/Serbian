@@ -1,0 +1,14 @@
+tipka levo  --- prethodna linija
+tipka desno --- sledeća linija
+tipka OK    --- sledeća linija
+tipka gore  --- 10 linija nazad
+tipka dole  --- 10 linija napred
+
+tipka 1     --- usporavanje brzine subtitla po -5ms
+tipka 3     --- ubrzavanje brzine subtitla po +5ms
+tipka 4     --- usporavanje brzine subtitla po -25ms
+tipka 6     --- ubrzavanje brzine subtitla po +25ms
+
+tipka 5     --- pomera subtitl na aktuelno EPG vreme
+tipka 7     --- pomera subtitl na poziciju na kojoj je bio pre nego ste napustili dodatak
+tipka 9     --- vraća subtitl na poziciju na kojoj je bio ranije i dodaje isteklo EPG vreme

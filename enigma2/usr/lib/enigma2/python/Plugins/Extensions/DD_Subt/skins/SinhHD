@@ -1,0 +1,17 @@
+<screen position="120,80" size="520,600" title="" flags="wfNoBorder" backgroundColor="transparent" >
+		<widget source="menu" render="Listbox" position="21,63" size="470,500" scrollbarMode="showNever" backgroundColor="background" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/ddsel1.png" transparent="1">
+		<convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryText(pos = (2, 1), size = (100, 20), flags = RT_HALIGN_LEFT, text = 0	), 
+					MultiContentEntryText(pos = (100, 1), size = (360, 20), flags = RT_HALIGN_LEFT, text = 1	), 
+					MultiContentEntryText(pos = (100, 22), size = (360, 18), flags = RT_HALIGN_LEFT, text = 2	), 
+				],
+			"fonts": [gFont("Regular", 18)],
+			"itemHeight": 44
+			}
+		</convert>
+	</widget>
+	<ePixmap position="0,0" size="521,600" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sbg1.png" zPosition="-1" />
+	<widget name="ntitle" position="25,12" size="470,33" text="Select subtitles - 2x(OK) run" font="Regular;30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" />
+	<eLabel position="20,55" size="480,1" backgroundColor="white" />
+</screen>

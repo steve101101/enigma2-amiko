@@ -1,0 +1,14 @@
+boton izquierda -- linea previa
+boton derecha ---- linea siguiente
+boton OK --------- linea siguiente
+boton arriba ----- Atrasa 10 lineas
+boton abajo ------ Avanza 10 lineas
+
+boton 1 ------ bajar velocidad del subtitulo a -5ms
+boton 3 ------ subir velocidad del subtitulo a +5ms
+boton 4 ------ bajar velocidad del subtitulo a -25ms
+boton 6 ------ subir velocidad del subtitulo a +25ms
+
+boton 5 ------ sincronizar el subtitulo con el tiempo del EPG Actual
+boton 7 ------ mueve el subtitulo a la posición que estaba antes de salir del plugin
+boton 9 ------ mueve el subtitulo a la posición que estaba antes y sincronica con el final del EPG

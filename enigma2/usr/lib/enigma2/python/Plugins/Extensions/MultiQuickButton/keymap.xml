@@ -1,0 +1,29 @@
+<keymap>
+<map context="QuickButtonActions">
+	<key id="KEY_RED" mapto="red" flags="m" />
+	<key id="KEY_GREEN" mapto="green" flags="m" />
+	<key id="KEY_YELLOW" mapto="yellow" flags="m" />
+	<key id="KEY_BLUE" mapto="blue" flags="m" />
+	<key id="KEY_V" mapto="vformat" flags="m" />
+	<key id="KEY_SUBTITLE" mapto="picasa" flags="m" />
+	<key id="KEY_AUDIO" mapto="shoutcast" flags="m" />
+	<key id="KEY_VIDEO" mapto="youtube" flags="m" />
+	<key id="KEY_FIND" mapto="find" flags="m" />
+	<key id="KEY_HELP" mapto="f1" flags="m" />
+	<key id="KEY_PREVIOUS" mapto="f2" flags="m" />
+	<key id="KEY_NEXT" mapto="f3" flags="m" />
+	<key id="KEY_TITLE" mapto="f4" flags="m" />
+	<key id="KEY_TIME" mapto="sleep" flags="m" />
+	<key id="KEY_S" mapto="spark" flags="m" />
+	<key id="KEY_RADIO" mapto="tvradio" flags="m" />
+	<key id="KEY_SAT" mapto="sat" flags="m" />
+	<key id="KEY_FAVORITES" mapto="fav" flags="m" />
+	<!--<key id="KEY_INFO" mapto="info" flags="m" />-->
+	<key id="KEY_EPG" mapto="epg" flags="m" />
+	<key id="KEY_ARCHIVE" mapto="file" flags="m" />
+	<key id="KEY_P" mapto="playmode" flags="m" />
+	<key id="KEY_CLOSE" mapto="usb" flags="m" />
+	<key id="KEY_BACK" mapto="recall" flags="m" />
+	<key id="KEY_AUX" mapto="tvsat" flags="m" />
+</map>
+</keymap>

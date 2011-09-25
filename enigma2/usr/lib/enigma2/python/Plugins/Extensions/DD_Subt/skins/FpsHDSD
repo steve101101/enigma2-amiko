@@ -1,0 +1,6 @@
+<screen position="100,70" size="549,375" flags="wfNoBorder" backgroundColor="transparent">
+	<ePixmap position="10,10" size="355,240" zPosition="-1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sbg2.png" />
+	<eLabel position="45,25" size="150,30" text="Change FPS" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1"/>
+	<eLabel position="25,65" size="320,1" backgroundColor="white" />
+	<widget name="upfps" position="40,75" size="295,155" itemHeight="32" scrollbarMode="showNever" backgroundColor="background" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/ddsel.png" transparent="1"/>
+</screen>

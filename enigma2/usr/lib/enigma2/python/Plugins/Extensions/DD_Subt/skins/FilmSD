@@ -1,0 +1,14 @@
+<screen position="center,center" size="520,500" title="" backgroundColor="transparent" flags="wfNoBorder">
+	<widget name="Mlist" position="20,115" size="475,310" scrollbarMode="showOnDemand" backgroundColor="background" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/ddsel.png" transparent="1"/>
+	<widget name="kfps" position="20,50" zPosition="1" size="300,40" font="Regular;20" halign="left" valign="center" backgroundColor="#18188b" transparent="1" />
+	<widget name="zvbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/ypr.png" position="380,55" zPosition="0" size="210,21" transparent="1" alphatest="on" />
+	<widget name="sepng" position="332,55" size="21,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/e.png" transparent="1" />
+	<widget name="supng" position="356,55" size="21,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/u.png" transparent="1" />
+	<widget name="zv" position="380,55" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/yp.png" transparent="1" />
+	<widget name="klang" position="19,450" zPosition="1" size="474,30" font="Regular;20" halign="left" valign="center" backgroundColor="#18188b" transparent="1" />
+	<ePixmap position="0,0" size="520,500" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sbg1-sd.png" zPosition="-1" />
+	<widget name="ptitl" position="25,12" size="465,23" font="Regular;22" transparent="1"/>
+	<eLabel position="20,45" size="480,1" backgroundColor="white" />
+	<eLabel position="20,95" size="480,1" backgroundColor="white" />
+	<eLabel position="20,440" size="480,1" backgroundColor="white" />
+</screen>

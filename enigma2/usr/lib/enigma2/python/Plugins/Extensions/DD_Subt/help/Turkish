@@ -1,0 +1,15 @@
+-- KUMANDA TUŞ GÖREVLERİ --
+SOL ------- önceki satır
+SAĞ ------ sonraki satır
+OK  ------- sonraki satır
+YUKARI --- 10 satır geri
+AŞAĞI ----- 10 satır ileri
+
+1 --------- altyazı geçiş hızını 5 ms yavaşlat
+3 --------- altyazı geçiş hızını 5 ms hızlandır
+4 --------- altyazı geçiş hızını 25 ms yavaşlat
+6 --------- altyazı geçiş hızını 25 ms hızlandır
+
+5 --------- altyazı konumunu mevcut EPG saatine göre konumlandır
+7 --------- kayıtlı filmden çıkıldığında ki pozisyona konumlandır
+9 --------- izlenen süreye, kaçırılan süreyi ekleyerek altyazıyı konumlandır

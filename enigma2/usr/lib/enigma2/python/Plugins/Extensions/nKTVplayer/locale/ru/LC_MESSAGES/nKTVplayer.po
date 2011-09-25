@@ -1,0 +1,144 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: nKTVplayer\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-01-17 23:54+0000\n"
+"PO-Revision-Date: 2011-01-18 22:18+0100\n"
+"Last-Translator: nitrogen14 <nitrogen14@gmx.de>\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-SourceCharset: iso-8859-15\n"
+
+msgid "login"
+msgstr "Абонемент"
+
+msgid "password"
+msgstr "Пароль"
+
+msgid "use servicewebts"
+msgstr "Использовать servicewebts"
+
+msgid "N-Guide time"
+msgstr "N-Guide время"
+
+msgid "Please enter a passwort"
+msgstr "Пожалуйста введите пароль"
+
+msgid "Add channel to favorites?"
+msgstr "Добавить канал к фаворитам?"
+
+msgid "Delete channel from favorites?"
+msgstr "Удалить канал из фаворитов?"
+
+msgid "Already exist"
+msgstr "Уже присутствует"
+
+msgid "Exit Plugin?"
+msgstr "Покинуть Plugin?"
+
+msgid "LOGIN ERROR"
+msgstr "Ошибка авторизации"
+
+msgid "now"
+msgstr "сейчас"
+
+msgid "in"
+msgstr "через"
+
+msgid "TODAY"
+msgstr "СЕГОДНЯ"
+
+msgid "January"
+msgstr "январь"
+
+msgid "Jan"
+msgstr "янв"
+
+msgid "February"
+msgstr "февраль"
+
+msgid "Feb"
+msgstr "фев"
+
+msgid "March"
+msgstr "март"
+
+msgid "Mar"
+msgstr "мар"
+
+msgid "April"
+msgstr "апрель"
+
+msgid "Apr"
+msgstr "апр"
+
+msgid "May"
+msgstr "май"
+
+msgid "June"
+msgstr "июнь"
+
+msgid "Jun"
+msgstr "июнь"
+
+msgid "July"
+msgstr "июль"
+
+msgid "Jul"
+msgstr "июль"
+
+msgid "August"
+msgstr "август"
+
+msgid "Aug"
+msgstr "авг"
+
+msgid "September"
+msgstr "сентябрь"
+
+msgid "Sept"
+msgstr "сен"
+
+msgid "October"
+msgstr "октябрь"
+
+msgid "Oct"
+msgstr "окт"
+
+msgid "November"
+msgstr "ноябрь"
+
+msgid "Nov"
+msgstr "нояб"
+
+msgid "December"
+msgstr "декабрь"
+
+msgid "Dec"
+msgstr "дек"
+
+msgid "Monday"
+msgstr "Понедельник"
+
+msgid "Tuesday"
+msgstr "Вторник"
+
+msgid "Wednesday"
+msgstr "Среда"
+
+msgid "Thursday"
+msgstr "Четверг"
+
+msgid "Friday"
+msgstr "Пятница"
+
+msgid "Saturday"
+msgstr "Суббота"
+
+msgid "Sunday"
+msgstr "Воскресенье"
+

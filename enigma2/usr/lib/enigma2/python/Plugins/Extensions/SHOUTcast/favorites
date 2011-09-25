@@ -1,0 +1,270 @@
+config.entriescount=46
+
+config.Entries.0.text=http://radio.zaycev.net:9002/ZaycevNet(256)
+config.Entries.0.audio=www.zaycev.net
+config.Entries.0.type=url
+config.Entries.0.name=               __________  З А Й Ц Е В . N E T  __________
+config.Entries.0.bitrate=256
+
+config.Entries.1.text=http://radio-1.avtograd.ru:8001/radio/14
+config.Entries.1.audio=Популярная в России станция Поп музыки
+config.Entries.1.type=url
+config.Entries.1.name=              __________  Р А Д И О   В А Н Я  __________
+config.Entries.1.bitrate=128
+
+config.Entries.2.text=http://mp3.nashe.ru:80/nashe-192
+config.Entries.2.audio=www.nashe.ru
+config.Entries.2.type=url
+config.Entries.2.name=              __________  Н А Ш Е   Р А Д И О  __________
+config.Entries.2.bitrate=192
+
+config.Entries.3.text=http://mos2.101.ru:8000/m7_0
+config.Entries.3.audio=www.101.ru
+config.Entries.3.type=url
+config.Entries.3.name=              __________  Д И С К О Т Е К А   80-Х  __________
+config.Entries.3.bitrate=128
+
+config.Entries.4.text=http://mos2.101.ru:8000/m3_2
+config.Entries.4.audio=http://www.avtoradio.ru/
+config.Entries.4.type=url
+config.Entries.4.name=              __________  А В Т О Р А Д И О  __________ 
+config.Entries.4.bitrate=128
+
+config.Entries.5.text=http://mos2.101.ru:8000/m4_5
+config.Entries.5.audio=www.101.ru
+config.Entries.5.type=url
+config.Entries.5.name=               __________  Р О С С И Я   Л У Ч Ш Е Е  __________
+config.Entries.5.bitrate=128
+
+config.Entries.6.text=http://radio-shtorm.ru:8000/112
+config.Entries.6.audio=www.101.ru
+config.Entries.6.type=url
+config.Entries.6.name=               __________  Р А Д И О    Ш Т О Р М  __________
+config.Entries.6.bitrate=128
+
+config.Entries.7.text=http://rb-stream.de:8000/rrb_128.mp3
+config.Entries.7.audio=Радио Русский Берлин онлайн
+config.Entries.7.type=url
+config.Entries.7.name=              __________  Р У С С К И Й   Б Е Р Л И Н  __________
+config.Entries.7.bitrate=128
+
+config.Entries.8.text=http://listen.rpfm.ru:9000/premium128
+config.Entries.8.audio=***
+config.Entries.8.type=url
+config.Entries.8.name=              __________  П Р Е М И У М . F M  __________
+config.Entries.8.bitrate=128
+
+config.Entries.9.text=http://mos2.101.ru:8000/m9_2
+config.Entries.9.audio=www.101.ru
+config.Entries.9.type=url
+config.Entries.9.name=               __________  Р А Д И О   Ш А Н С О Н  __________
+config.Entries.9.bitrate=128
+
+config.Entries.10.text=http://mos2.101.ru:8000/m16_1
+config.Entries.10.audio=Современное кабаре,"неблатной" шансон...
+config.Entries.10.type=url
+config.Entries.10.name=              __________  К А Б А Р Е   Ш А Н С О Н  __________
+config.Entries.10.bitrate=128
+
+config.Entries.11.text=http://mos2.101.ru:8000/m13_19
+config.Entries.11.audio=http://www.mkrug.ru/
+config.Entries.19.type=url
+config.Entries.11.name=              __________  М И Х А И Л   К Р У Г  __________
+config.Entries.11.bitrate=128
+
+config.Entries.12.text=http://live.icefm.ru:9000/live
+config.Entries.12.audio=www.101.ru
+config.Entries.12.type=url
+config.Entries.12.name=               __________  Р А Д И О   I C E . F M  __________
+config.Entries.12.bitrate=128
+
+config.Entries.13.text=http://mos2.101.ru:8000/m17_2
+config.Entries.13.audio=www.101.ru
+config.Entries.13.type=url
+config.Entries.13.name=               __________  Д Ы Х А Н И Е   П Р И Р О Д Ы  __________
+config.Entries.13.bitrate=128
+
+config.Entries.14.text=http://fm128.radiosexfm.ru:8000/sexfm
+config.Entries.14.audio=www.101.ru
+config.Entries.14.type=url
+config.Entries.14.name=               __________  Р А Д И О   S Е Х . F M  __________
+config.Entries.14.bitrate=128
+
+config.Entries.15.text=http://eu1.101.ru:8000/m11_3
+config.Entries.15.audio=www.101.ru
+config.Entries.15.type=url
+config.Entries.15.name=               __________  В Ы С О Ц К И Й  __________
+config.Entries.15.bitrate=128
+
+config.Entries.16.text=http://webcast1.emg.fm:55655/retro128.mp3
+config.Entries.16.audio=www.101.ru
+config.Entries.16.type=url
+config.Entries.16.name=               __________  Р Е Т Р О . F M  __________
+config.Entries.16.bitrate=128
+
+config.Entries.17.text=http://urg.adamant.net:8080/radio-stilnoe
+config.Entries.17.audio=Радио Стильное радио (Перец ФМ) Киев
+config.Entries.17.type=url
+config.Entries.17.name=              __________  П Е Р Е Ц . F M  __________
+config.Entries.17.bitrate=128
+
+config.Entries.18.text=http://eu1.101.ru:8000/m4_1
+config.Entries.18.audio=www.101.ru
+config.Entries.18.type=url
+config.Entries.18.name=              __________  Ю М О Р . F M  __________
+config.Entries.18.bitrate=128
+
+config.Entries.19.text=http://mos2.101.ru:8000/m2_4
+config.Entries.19.audio=www.101.ru
+config.Entries.19.type=url
+config.Entries.19.name=              __________  Ю М О Р   Н О Н - S Т О Р  __________
+config.Entries.19.bitrate=128
+
+config.Entries.20.text=http://eu1.101.ru:8000/m2_4
+config.Entries.20.audio=www.101.ru
+config.Entries.20.type=url
+config.Entries.20.name=              __________  А Н Е К Д О Т Ы  __________
+config.Entries.20.bitrate=128
+
+config.Entries.21.text=http://stream0.radiostyle.ru:8000/y-radio
+config.Entries.21.audio=www.radiostyle.ru
+config.Entries.21.type=url
+config.Entries.21.name=              __________  Y - Р А Д И О  __________
+config.Entries.21.bitrate=128
+
+config.Entries.22.text=http://mos2.101.ru:8000/m7_13
+config.Entries.22.audio=http://www.aria.ru/
+config.Entries.22.type=url
+config.Entries.22.name=              __________  А  Р  И  Я  __________
+config.Entries.22.bitrate=128
+
+config.Entries.23.text=http://mos2.101.ru:8000/m7_15
+config.Entries.23.audio=http://www.sektorgaza.ru/
+config.Entries.23.type=url
+config.Entries.23.name=              __________  С Е К Т О Р  Г А З А  __________
+config.Entries.23.bitrate=128
+
+config.Entries.24.text=http://mos2.101.ru:8000/m17_20
+config.Entries.24.audio=http://www.agata.ru/
+config.Entries.24.type=url
+config.Entries.24.name=              __________  А Г А Т А   К Р И С Т И  __________
+config.Entries.24.bitrate=128
+
+config.Entries.25.text=http://mos2.101.ru:8000/m14_22
+config.Entries.25.audio=http://www.nautilus.ru/
+config.Entries.25.type=url
+config.Entries.25.name=              __________  Н А У Т И Л У С  __________
+config.Entries.25.bitrate=128
+
+config.Entries.26.text=http://mos2.101.ru:8000/m14_18
+config.Entries.26.audio=www.101.ru
+config.Entries.26.type=url
+config.Entries.26.name=              __________  Л А С К О В Ы Й   М А Й  __________
+config.Entries.26.bitrate=128
+
+config.Entries.27.text=http://mos2.101.ru:8000/m7_13
+config.Entries.27.audio=http://www.mashina.ru/
+config.Entries.27.type=url
+config.Entries.27.name=              __________  М А Ш И Н А   В Р Е М Е Н И  __________
+config.Entries.27.bitrate=128
+
+config.Entries.28.text=http://mos2.101.ru:8000/m3_1
+config.Entries.28.audio=Все хиты Вокально-Инструментальных Ансамблей
+config.Entries.28.type=url
+config.Entries.28.name=              __________  В . И . А  __________
+config.Entries.28.bitrate=128
+
+config.Entries.29.text=http://mos2.101.ru:8000/m16_1
+config.Entries.29.audio=Современное кабаре,"неблатной" шансон...
+config.Entries.29.type=url
+config.Entries.29.name=              __________  К А Б А Р Е   Ш А Н С О Н  __________
+config.Entries.29.bitrate=128
+
+config.Entries.30.text=http://mos2.101.ru:8000/m1_5
+config.Entries.30.audio=Единственный в России канал бардовской песни
+config.Entries.30.type=url
+config.Entries.30.name=              __________  А В Т О Р С К А Я   П Е С Н Я  __________
+config.Entries.30.bitrate=128
+
+config.Entries.31.text=http://online.pionerfm.ru:8000/pionerfm
+config.Entries.31.audio=Радио Пионер ФМ (Pioner Fm) онлайн
+config.Entries.31.type=url
+config.Entries.31.name=              __________  П И О Н Е Р . F М  __________
+config.Entries.31.bitrate=128
+
+config.Entries.32.text=http://eu1.101.ru:8000/m5_3
+config.Entries.32.audio=www.101.ru
+config.Entries.32.type=url
+config.Entries.32.name=               __________  Р А Д И О   П А Р О Д И Й  __________
+config.Entries.32.bitrate=128
+
+config.Entries.33.text=http://webcast2.emg.fm:55655/keks32.mp3
+config.Entries.33.audio=неординарный продукт FM-индустрии
+config.Entries.33.type=url
+config.Entries.33.name=              __________  К Е К С . F М  __________
+config.Entries.33.bitrate=128
+
+config.Entries.34.text=http://radio.corbina.ru:8161
+config.Entries.34.audio=www.101.ru
+config.Entries.34.type=url
+config.Entries.34.name=              __________  Р О С С И Я   9 0 - Х  __________
+config.Entries.34.bitrate=128
+
+config.Entries.35.text=http://radio.corbina.ru:8069
+config.Entries.35.audio=www.101.ru
+config.Entries.35.type=url
+config.Entries.35.name=                __________  Q U E E N  __________
+config.Entries.35.bitrate=128
+
+config.Entries.36.text=http://radio.corbina.ru:8205
+config.Entries.36.audio=www.101.ru
+config.Entries.36.type=url
+config.Entries.36.name=                __________  Е В Р О - Х И Т  __________
+config.Entries.36.bitrate=128
+
+config.Entries.37.text=http://77.47.134.32/035
+config.Entries.37.type=url
+config.Entries.37.name=                __________  Н А С Т А Л Ь Ж И  __________
+config.Entries.37.bitrate=128
+
+config.Entries.38.text=http://radio.mv.ru:8080/Radio_Russia
+config.Entries.38.type=url
+config.Entries.38.name=                __________  Р А Д И О   Р О С С И И  __________
+config.Entries.38.bitrate=128
+
+config.Entries.39.text=http://w01-cn01.akadostream.ru:8000/russianradio128.mp3
+config.Entries.39.type=url
+config.Entries.39.name=                __________  Р У С С К О Е   Р А Д И О  __________
+config.Entries.39.bitrate=128
+
+config.Entries.40.text=http://mp3.nashe.ru:80/nashe-128
+config.Entries.40.type=url
+config.Entries.40.name=                __________  Н А Ш Е   Р А Д И О __________
+config.Entries.40.bitrate=128
+
+config.Entries.41.text=http://stream.mradio.fm:8000/mradio_high.mp3
+config.Entries.41.type=url
+config.Entries.41.name=                __________  Х - F M  __________
+config.Entries.41.bitrate=128
+
+config.Entries.42.text=http://213.79.118.22:8000/gm-fm-128
+config.Entries.42.type=url
+config.Entries.42.name=                __________  Г О В О Р И Т   М О С К В А  __________
+config.Entries.42.bitrate=128
+
+config.Entries.43.text=http://radio.corbina.ru:8139
+config.Entries.43.audio=www.101.ru
+config.Entries.43.type=url
+config.Entries.43.name=               __________  Л Ю Б И М Ы Е   М Е Л О Д И И  __________
+config.Entries.43.bitrate=128
+
+config.Entries.44.text=http://82.193.141.171:8000/120
+config.Entries.44.type=url
+config.Entries.44.name=                __________  Р А Д И О   П И Л О Т  __________
+config.Entries.44.bitrate=128
+
+config.Entries.45.text=http://radio.corbina.ru:8183
+config.Entries.45.audio=www.101.ru
+config.Entries.45.type=url
+config.Entries.45.name=                __________  P I N K   F L O I D  __________
+config.Entries.45.bitrate=128

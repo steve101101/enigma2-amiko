@@ -1,0 +1,14 @@
+tipka lijevo ---- prethodna rečenica podnapisa
+tipka desno --- sljedeća rečenica podnapisa
+tipka OK ------- slijedeća rečenica podnapisa
+tipka gore ----- 10 rečenica podnapisa natrag
+tipka dolje ---- 10 rečenica podnapisa naprijed
+
+tipka 1 -------- fino usporavanje brzine podnapisa -5ms
+tipka 3 -------- fino ubrzavanje brzine podnapisa +5ms
+tipka 4 -------- fino usporavanje brzine podnapisa -25ms
+tipka 6 -------- fino ubrzavanje brzine podnapisa +25ms
+
+tipka 5 -------- pomiče podnapis na vrijeme filma po EPG-u
+tipka 7 -------- vraća podnapis na vrijeme kada ste izašli iz plugina
+tipka 9 -------- vraća podnapis na vrijeme izlaska uvećano za proteklo vrijeme po EPG-u
