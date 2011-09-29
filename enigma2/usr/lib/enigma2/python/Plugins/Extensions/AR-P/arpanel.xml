@@ -53,11 +53,21 @@ self.session.open(EmuStart)
 			</usersh>
                <usersh name="Settings_jodasa" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Settings_jodasa.sh" confirmation="true" shortcut="4" help="(4) Settings_jodasa"  exit="no">
 			</usersh>	
-		   </entry>   	   	        
-<plugin name="MultiQuickButton" target="" shortcut="8" help="start MultiQuickButton " exit="no">	
+		   </entry> 
+               <entry name="Backup" shortcut="8" help="(8)Backup" >
+	      <usersh name="BackupFlash" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/backup.sh" confirmation="true" shortcut="1" help="(1) BackupFlash"  exit="no"> 
+              </usersh>	
+               <usersh name="BackupEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/BackupEnigma2Settings.sh" confirmation="true" shortcut="2" help="(2) BackupEnigma2Settings"  exit="no">
+			</usersh>
+               <usersh name="RestoreEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/RestoreEnigma2Settings.sh" confirmation="true" shortcut="3" help="(3) RestoreEnigma2Settings"  exit="no">
+                    </usersh>
+		   </entry> 
+                <usersh name="Ipkginstall from tmp" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/ipkginstall.sh" confirmation="true" shortcut="9" help="(9) Ipkginstall"  exit="no">
+               </usersh>    	        
+             <plugin name="MultiQuickButton" target="" shortcut="red" help="start MultiQuickButton " exit="no">	
 <code><![CDATA[
 from Plugins.Extensions.MultiQuickButton.plugin import *
 self.session.open(MultiQuickButton)
 ]]></code>
-	</plugin> 
+      </plugin> 
  </menu>
