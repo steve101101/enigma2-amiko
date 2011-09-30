@@ -7,14 +7,16 @@
 from Screens.ScriptStart import ScriptStart
 self.session.open (ScriptStart)
 ]]></code>
-      </plugin>   
-<plugin name="EmuStart" target="" shortcut="2" help="(2) EmuStart" exit="no">	
+      </plugin> 
+                 <usersh name="EpgUpdate" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/epg.sh" confirmation="true" shortcut="2" help="(2) EpgStart"  exit="no">
+               </usersh> 
+<plugin name="EmuStart" target="" shortcut="3" help="(3) EmuStart" exit="no">	
 <code><![CDATA[
 from Plugins.Extensions.EmuStart.plugin import *
 self.session.open(EmuStart)
 ]]></code>
 	</plugin>		
-    <entry name="System &gt;" shortcut="3" help="(3) System" >					
+    <entry name="System &gt;" shortcut="4" help="(4) System" >					
     <usersh name="KernelVersion" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/KernelVersion.sh" confirmation="true" shortcut="1" help="(1) KernelVersion"  exit="no">
 			</usersh>
     <usersh name="Show Process List" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Process_List.sh" confirmation="true" shortcut="2" help="(2) Process_List"  exit="no">
@@ -27,24 +29,20 @@ self.session.open(EmuStart)
 			</usersh>     
      <usersh name="Delete_all_crashlogs" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Delete_Crashlogs.sh" confirmation="true" shortcut="6" help="Delete_all_crashlogs"  exit="no">
 			</usersh>
-			</entry> 
-	   <entry name="EpgStart &gt;" shortcut="4" help="(4)EpgStart" >
-	      <usersh name="EpgUpdate" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/epg.sh" confirmation="true" shortcut="1" help="(1) EpgStart"  exit="no">
-			</usersh>	
-		   </entry> 
-           <entry name="PiconConfig" shortcut="5" help="(5)EpgStart" >
+			</entry>  
+           <entry name="PiconConfig >" shortcut="5" help="(5)EpgStart" >
 	      <usersh name="PiconFlasch" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/picon_load.sh" confirmation="true" shortcut="1" help="(1) PiconFlasch"  exit="no">
 			</usersh>
                <usersh name="PiconHdd" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/picon_loadhdd.sh" confirmation="true" shortcut="2" help="(2) PiconHdd"  exit="no">
 			</usersh>	
 		   </entry> 
-              <entry name="AudioDTS" shortcut="6" help="(6)AudioDTS" >
+              <entry name="AudioDTS >" shortcut="6" help="(6)AudioDTS" >
 	      <usersh name="DTS_on" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/DTS.sh" confirmation="true" shortcut="1" help="(1) DTS_on"  exit="no">
 			</usersh>
                <usersh name="DTS_of" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/DTS1.sh" confirmation="true" shortcut="2" help="(2) DTS_of"  exit="no">
 			</usersh>	
 		   </entry> 
-               <entry name="SETTINGS" shortcut="7" help="(7)SETTINGS" >
+               <entry name="SETTINGS >" shortcut="7" help="(7)SETTINGS" >
 	      <usersh name="Gensh-4sat" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/gensh4sat.sh" confirmation="true" shortcut="1" help="(1) Gensh-4sat"  exit="no">
 			</usersh>
                <usersh name="Gensh-astra" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/gensh_astra.sh" confirmation="true" shortcut="2" help="(2) Gensh-astra"  exit="no">
@@ -54,7 +52,7 @@ self.session.open(EmuStart)
                <usersh name="Settings_jodasa" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Settings_jodasa.sh" confirmation="true" shortcut="4" help="(4) Settings_jodasa"  exit="no">
 			</usersh>	
 		   </entry> 
-               <entry name="Backup" shortcut="8" help="(8)Backup" >
+               <entry name="Backup >" shortcut="8" help="(8)Backup" >
 	      <usersh name="BackupFlash" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/backup.sh" confirmation="true" shortcut="1" help="(1) BackupFlash"  exit="no"> 
               </usersh>	
                <usersh name="BackupEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/BackupEnigma2Settings.sh" confirmation="true" shortcut="2" help="(2) BackupEnigma2Settings"  exit="no">
@@ -63,7 +61,7 @@ self.session.open(EmuStart)
                     </usersh>
 		   </entry> 
                 <usersh name="Ipkginstall from tmp" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/ipkginstall.sh" confirmation="true" shortcut="9" help="(9) Ipkginstall"  exit="no">
-               </usersh>    	        
+                </usersh>    	        
              <plugin name="MultiQuickButton" target="" shortcut="red" help="start MultiQuickButton " exit="no">	
 <code><![CDATA[
 from Plugins.Extensions.MultiQuickButton.plugin import *
