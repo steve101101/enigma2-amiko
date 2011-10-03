@@ -4,7 +4,6 @@
     <resolution bpp="32" xres="1280" yres="720" />
   </output>
   <colors>
-    <color name="unffff" value="#0000ffff" />
     <color name="background" value="#00343c4f" />
     <color name="background2" value="#0038435a" />
     <color name="backgroundf" value="#00666666" />
@@ -57,6 +56,7 @@
     <color name="unff880a" value="#00ff880a" />
     <color name="unff8b89" value="#00ff8b89" />
     <color name="unffded3" value="#00ffded3" />
+    <color name="unffff" value="#0000ffff" />
     <color name="unfffff0" value="#00fffff0" />
     <color name="white" value="#00ffffff" />
     <color name="white2" value="#45ffffff" />
@@ -351,12 +351,12 @@
       <convert type="FrontendInfo">SNR</convert>
     </widget>
   </screen>
-<screen name="Volume" position="100,50" size="87,87" title="Volume" zPosition="10" flags="wfNoBorder">
+  <screen name="Volume" position="100,50" size="87,87" title="Volume" zPosition="10" flags="wfNoBorder">
     <widget name="Volume" pixmap="AmikoSkin/volume/vol.png" position="2,2" size="83,83" orientation="orBottomToTop" zPosition="1" transparent="1" />
     <ePixmap position="0, 0" zPosition="0" size="87, 87" pixmap="AmikoSkin/volume/vol_back.png" />
     <widget source="global.CurrentTime" render="YOURSKINvolumeText" position="24,32" size="37,20" font="Regular;22" backgroundColor="black" foregroundColor="unffff" halign="center" valign="center" zPosition="4" transparent="1" />
   </screen>
-   <screen name="Mute" flags="wfNoBorder" position="100, 50" size="87,87" backgroundColor="black" title="Mute" zPosition="10">
+  <screen name="Mute" flags="wfNoBorder" position="100, 50" size="87,87" backgroundColor="black" title="Mute" zPosition="10">
     <ePixmap alphatest="on" pixmap="AmikoSkin/volume/mute.png" position="0,0" size="87,87" zPosition="0" />
   </screen>
   <screen name="Menu" position="center,center" size="450,390" title="Main menu">
@@ -1769,10 +1769,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="Setup" position="0,0" size="1280,720" title="Setup">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="797,378" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="879,577" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="971,382" render="Label" size="258,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="985,578" render="Label" size="258,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="703,43" text="Setup" transparent="1" halign="center" />
@@ -1786,10 +1786,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="SimpleChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="797,378" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="860,545" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="963,380" render="Label" size="266,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="964,547" render="Label" size="266,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="686,43" text="Channel Selection" transparent="1" halign="center" />
@@ -1805,10 +1805,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="798,380" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="859,507" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="966,385" render="Label" size="262,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="962,509" render="Label" size="262,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="685,43" text="Choose your Skin" transparent="1" halign="center" />
@@ -1875,10 +1875,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="TimerEditList" position="0,0" size="1280,720" title="Timer Editor">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="799,378" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="862,566" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="957,380" render="Label" size="271,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="963,568" render="Label" size="271,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="678,43" text="Timer Editor" transparent="1" halign="center" />
@@ -1894,10 +1894,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="TimerEntry" position="0,0" size="1280,720" title="Timer entry">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="799,381" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="841,532" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="962,386" render="Label" size="268,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="945,536" render="Label" size="268,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="700,43" text="Timer entry" transparent="1" halign="center" />
@@ -2068,10 +2068,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="VirtualKeyBoard" position="0,0" size="1280,720" title="Virtual KeyBoard" zPosition="99">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="800,386" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="858,557" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="969,389" render="Label" size="258,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="959,558" render="Label" size="258,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="702,43" text="Virtual KeyBoard" transparent="1" halign="center" />
@@ -2934,10 +2934,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- Softwaremanager -->
   <screen flags="wfNoBorder" name="BackupSelection" position="0,0" size="1280,720" title="Select files/folders to backup...">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="799,380" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="931,559" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1041,383" render="Label" size="189,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1035,560" render="Label" size="189,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="670,43" text="Select files/folders to backup..." transparent="1" />
@@ -2951,10 +2951,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="Ipkg" position="0,0" size="1280,720" title="Installing Software...">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="802,385" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="964,563" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1077,388" render="Label" size="149,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1068,563" render="Label" size="149,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="672,43" text="Installing Software..." transparent="1" halign="center" />
@@ -2965,10 +2965,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="IpkgInstaller" position="0,0" size="1280,720" title="...">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="799,385" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="921,519" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1030,390" render="Label" size="198,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1026,519" render="Label" size="198,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="653,43" text="IpkgInstaller" transparent="1" halign="center" />
@@ -2981,10 +2981,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="IPKGMenu" position="0,0" size="1280,720" title="Select IPKG source.....">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="801,383" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="927,531" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1038,385" render="Label" size="192,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1030,533" render="Label" size="192,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="634,43" text="IPKGMenu" transparent="1" halign="center" />
@@ -3005,10 +3005,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="PacketManager" position="0,0" size="1280,720" title="PacketManager">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="799,380" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="950,552" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1060,382" render="Label" size="168,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1052,553" render="Label" size="168,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;32" position="70,47" size="608,43" text="PacketManager" transparent="1" halign="center" />
@@ -3032,10 +3032,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="PluginDetails" position="0,0" size="1280,720" title="Plugin details">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="799,383" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="958,563" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1072,384" render="Label" size="158,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1063,566" render="Label" size="158,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;32" position="70,47" size="666,43" text="Plugin details" transparent="1" halign="center" />
@@ -3052,10 +3052,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="PluginManager" position="0,0" size="1280,720" title="Plugin manager">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="800,382" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="903,572" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1021,387" render="Label" size="210,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1007,573" render="Label" size="210,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;32" position="70,47" size="631,43" text="Plugin manager" transparent="1" halign="center" />
@@ -3089,10 +3089,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="PluginManagerInfo" position="0,0" size="1280,720" title="Plugin manager activity">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="802,385" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="943,574" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1061,388" render="Label" size="169,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1047,573" render="Label" size="169,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;32" position="70,47" size="596,43" text="Plugin manager activity information" transparent="1" />
@@ -3116,10 +3116,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="PluginManagerHelp" position="0,0" size="1280,720" title="Plugin manager help">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="800,382" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="945,569" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1055,386" render="Label" size="171,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1050,572" render="Label" size="171,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;32" position="70,46" size="607,43" text="Plugin manager help" transparent="1" />
@@ -3141,10 +3141,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="RestoreMenu" position="0,0" size="1280,720" title="Restore Backups">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="801,383" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="938,560" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1057,385" render="Label" size="175,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1039,562" render="Label" size="175,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="639,43" text="Restore Backups" transparent="1" halign="center" />
@@ -3158,10 +3158,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="UpdatePlugin" position="0,0" size="1280,720" title="Software Update...">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="800,382" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="953,564" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1065,384" render="Label" size="165,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1058,572" render="Label" size="165,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="684,43" text="Software Update..." transparent="1" halign="center" />
@@ -3174,10 +3174,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen flags="wfNoBorder" name="WeatherPluginEntriesListConfigScreen" position="0,0" size="1280,720" title="WeatherPlugin: List of Entries">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="center,center" size="1280,720" zPosition="-10" />
     <ePixmap alphatest="blend" pixmap="AmikoSkin/buttons/menu.png" position="794,65" size="70,30" zPosition="3" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="800,387" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="940,555" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1059,390" render="Label" size="168,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1051,556" render="Label" size="168,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="650,43" text="WeatherPlugin: List of Entries" transparent="1" />
@@ -3194,11 +3194,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen flags="wfNoBorder" name="WeatherPluginEntryConfigScreen" position="0,0" size="1280,720" title="WeatherPlugin: Edit Entry">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
-    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="800,381" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;26" halign="right" position="968,580" render="Label" size="100,28" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="AmikoSkin/buttons/menu.png" position="797,65" size="70,30" zPosition="3" />
-    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1085,383" render="Label" size="145,25" source="global.CurrentTime" transparent="1">
+    <widget backgroundColor="backtop" font="Regular;20" halign="right" position="1071,580" render="Label" size="145,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="70,47" size="691,43" text="WeatherPlugin: Edit Entry" transparent="1" />
@@ -3208,7 +3208,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap alphatest="on" pixmap="AmikoSkin/buttons/blue.png" position="940,635" size="24,24" />
     <widget backgroundColor="black" font="Regular;20" halign="left" position="100,635" render="Label" size="260,24" source="key_red" transparent="1" zPosition="1" />
     <widget backgroundColor="black" font="Regular;20" halign="left" position="390,635" render="Label" size="260,24" source="key_green" transparent="1" zPosition="1" />
-    <widget backgroundColor="black" font="Regular;20" halign="left" position="970,635" render="Label" size="360,24" source="key_blue" transparent="1" zPosition="1" />
+    <widget backgroundColor="black" font="Regular;20" halign="left" position="970,635" render="Label" size="304,24" source="key_blue" transparent="1" zPosition="1" />
   </screen>
   <screen flags="wfNoBorder" name="WeatherPlugin" position="0,0" size="1280,720" title="Weather Plugin">
     <ePixmap pixmap="AmikoSkin/menu/back1.png" position="0,0" size="1280,720" zPosition="-10" />
