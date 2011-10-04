@@ -171,20 +171,8 @@
       <convert type="ExtremeInfo">ConaxCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="Free to Air" backgroundColor="background" position="250,20" size="160,24" halign="center" font="Regular;22" foregroundColor="unaaaaaa" zPosition="3" transparent="1">
-      <convert type="ExtremeInfo">Fta</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="Card" backgroundColor="background" position="250,20" size="160,24" halign="center" font="Regular;22" foregroundColor="un56c856" zPosition="4" transparent="1">
-      <convert type="ExtremeInfo">Crd</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="Emulator" backgroundColor="background" position="250,20" size="160,24" halign="center" font="Regular;22" foregroundColor="orange" zPosition="5" transparent="1">
+    <widget source="session.CurrentService" render="FixedLabel" text="Emulator" backgroundColor="background" position="249,18" size="160,24" halign="center" font="Regular;22" foregroundColor="orange" zPosition="5" transparent="1">
       <convert type="ExtremeInfo">Emu</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="FixedLabel" text="Network" backgroundColor="background" position="250,20" size="160,24" halign="center" font="Regular;22" foregroundColor="unff4a3c" zPosition="6" transparent="1">
-      <convert type="ExtremeInfo">Net</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="Snr" zPosition="4" position="60,78" size="50,20" halign="left" font="Regular;20" foregroundColor="white" transparent="1" backgroundColor="darkgrey" />
@@ -278,7 +266,7 @@
     </widget>
     <ePixmap alphatest="blend" pixmap="allian/picon_frame.png" position="1120, 21" size="126,82" zPosition="9" />
     <widget alphatest="on" position="1127, 26" render="PiconSatTV" size="100,60" source="session.CurrentService" transparent="1" zPosition="2" />
-    <widget alphatest="on" position="51, 170" render="PiconRef" size="100,60" source="session.CurrentService" transparent="1" zPosition="2">
+    <widget alphatest="on" position="51, 170" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="allian/picon_frame.png" position="43, 165" size="126,82" zPosition="9" />
@@ -363,7 +351,7 @@
       <convert type="ClockToText">Format::%S</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="allian/picon_frame.png" position="42,74" size="126,82" zPosition="9" />
-    <widget alphatest="on" position="50,80" render="PiconRef" size="100,60" source="session.CurrentService" transparent="1" zPosition="2">
+    <widget alphatest="on" position="50,80" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="allian/ico_dolby_on.png" position="959,80" size="57,20" zPosition="3" alphatest="blend">
@@ -534,7 +522,7 @@
       <convert type="ClockToText">Format::%S</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="allian/picon_frame.png" position="42,74" size="126,82" zPosition="9" />
-    <widget alphatest="on" position="50,80" render="PiconRef" size="100,60" source="session.CurrentService" transparent="1" zPosition="2">
+    <widget alphatest="on" position="50,80" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="2">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="allian/ico_dolby_on.png" position="959,80" size="57,20" zPosition="3" alphatest="blend">
@@ -668,10 +656,10 @@
       <convert type="MenuEntryCompare">Panel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-       <widget source="menu" render="Pixmap" pixmap="allian/icons/kartina.png" position="360,250" size="200,200" alphatest="blend">
+    <widget source="menu" render="Pixmap" pixmap="allian/icons/kartina.png" position="360,250" size="200,200" alphatest="blend">
       <convert type="MenuEntryCompare">nktv_player</convert>
       <convert type="ConditionalShowHide" />
-    </widget> 
+    </widget>
     <widget source="menu" render="Pixmap" pixmap="allian/icons/dvd.png" position="360,250" size="200,200" alphatest="blend">
       <convert type="MenuEntryCompare">dvd_player</convert>
       <convert type="ConditionalShowHide" />
@@ -1498,8 +1486,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="key_yellow" render="Label" position="560,525" size="250,30" shadowColor="black" font="Regular;24" halign="center" valign="center" foregroundColor="yellow" zPosition="2" transparent="1" backgroundColor="black" />
   </screen>
   <screen name="NetworkAdapterSelection" position="90,100" size="1100,560" title="Select Network Adapter">
-    <widget source="list" render="Listbox" position="20, 90" size="740,375" scrollbarMode="showOnDemand"  backgroundColor="background" transparent="1">
-			<convert type="TemplatedMultiContent">
+    <widget source="list" render="Listbox" position="20, 90" size="740,375" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1">
+      <convert type="TemplatedMultiContent">
 				{"template": [
 					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (54, 54), png = 3), # index 3 is the interface pixmap
 					MultiContentEntryPixmapAlphaTest(pos = (71, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
@@ -1510,7 +1498,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				"itemHeight": 75
 				}
 			</convert>
-		</widget>
+    </widget>
     <widget name="introduction" position="20,470" size="740,30" zPosition="10" font="Regular;24" halign="center" transparent="1" />
     <eLabel position="780,0" size="2,518" backgroundColor="grey" />
     <eLabel position="0,518" size="1100,2" backgroundColor="grey" />
@@ -1747,7 +1735,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="80,125" size="300,420" zPosition="1" backgroundColor="grey" />
     <eLabel position="81,126" size="298,418" zPosition="2" backgroundColor="black" />
     <widget source="cutlist" position="90,135" size="280,400" zPosition="3" scrollbarMode="showOnDemand" render="Listbox">
-<convert type="TemplatedMultiContent">
+      <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(size=(125, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
 						MultiContentEntryText(pos=(125,0), size=(50, 20), text = 2, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(3))
@@ -1756,8 +1744,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				 "itemHeight": 20
 				}
 			</convert>
-		</widget>
-    <eLabel position="479,124" zPosition="3" size="696,377" backgroundColor="transparent2" /> 
+    </widget>
+    <eLabel position="479,124" zPosition="3" size="696,377" backgroundColor="transparent2" />
     <widget name="Video" position="270,100" zPosition="-10" size="390,300" />
     <widget source="session.CurrentService" render="Label" position="450,510" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="black" transparent="1">
       <convert type="ServiceName">Name</convert>
