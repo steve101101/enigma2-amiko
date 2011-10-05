@@ -28,12 +28,11 @@
     <color name="transpBlack" value="#80000000" />
     <color name="transpWhite" value="#77ffffff" />
     <color name="transpyellow" value="#33bab329" />
-    <color name="un001F21" value="#00001f21" />
     <color name="un003EFF" value="#00003eff" />
     <color name="un15000000" value="#15000000" />
     <color name="un18252f" value="#0018252f" />
     <color name="un269988" value="#00269988" />
-    <color name="un30607" value="#00030607" />
+    <color name="un30607" value="#00001f21" />
     <color name="un333333" value="#00333333" />
     <color name="un353e575e" value="#353e575e" />
     <color name="un3d973d" value="#003d973d" />
@@ -83,7 +82,7 @@
   </subtitles>
   <windowstyle id="0" type="skinned">
     <title font="Regular;24" offset="30,10" />
-    <color color="un001F21" name="Background" />
+    <color color="un30607" name="Background" />
     <color color="white" name="LabelForeground" />
     <color color="black" name="ListboxBackground" />
     <color color="darkgrey" name="ListboxForeground" />
@@ -131,10 +130,10 @@
   <screen backgroundColor="transparent2" flags="wfNoBorder" name="InfoBar" position="center,490" size="1280,240" title="Infobar">
     <ePixmap alphatest="blend" pixmap="AmikoSkin/infobar.png" position="center,18" size="1280,225" zPosition="-5" />
     <ePixmap alphatest="blend" pixmap="AmikoSkin/freeTVCS.png" position="1134,71" size="40,30" zPosition="3" />
-    <widget backgroundColor="un333333" font="Uhr;36" foregroundColor="white" halign="right" position="49,111" render="Label" size="106,72" source="global.CurrentTime" transparent="1" valign="top" zPosition="2">
+    <widget backgroundColor="un333333" font="Uhr;36" foregroundColor="white" halign="right" position="59,139" render="Label" size="92,37" source="global.CurrentTime" transparent="1" valign="top" zPosition="2">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="un333333" font="LCD;18" foregroundColor="red" halign="right" position="104,122" render="Label" size="70,22" source="global.CurrentTime" transparent="1" valign="top" zPosition="2">
+    <widget backgroundColor="un333333" font="LCD;18" foregroundColor="red" halign="right" position="104,150" render="Label" size="70,22" source="global.CurrentTime" transparent="1" valign="top" zPosition="2">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
     <widget backgroundColor="black" font="Regular;27" foregroundColor="un7fff" halign="left" position="389,73" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="407,28" source="session.CurrentService" transparent="1">
@@ -359,9 +358,9 @@
   <screen name="Mute" flags="wfNoBorder" position="100, 50" size="87,87" backgroundColor="black" title="Mute" zPosition="10">
     <ePixmap alphatest="on" pixmap="AmikoSkin/volume/mute.png" position="0,0" size="87,87" zPosition="0" />
   </screen>
-  <screen name="Menu" position="center,center" size="450,390" title="Main menu">
+  <screen name="Menu" position="center,center" size="450,390" title="Main menu" backgroundColor="orange">
     <widget font="Regular;23" position="10,10" render="Label" size="430,35" source="title" />
-    <widget itemHeight="30" position="10,60" render="Listbox" selectionPixmap="AmikoSkin/menu/sp430_40.png" scrollbarMode="showOnDemand" size="430,330" source="menu">
+    <widget itemHeight="30" position="8,63" render="Listbox" selectionPixmap="AmikoSkin/menu/sp430_40.png" scrollbarMode="showOnDemand" size="430,330" source="menu">
       <convert type="StringList" />
     </widget>
   </screen>
@@ -540,7 +539,7 @@
     </widget>
     <eLabel backgroundColor="backtop" font="Regular;35" position="149,51" size="511,43" text="About AMIKO" transparent="1" halign="center" />
     <eLabel backgroundColor="background" font="Regular;26" halign="center" position="868,590" size="408,35" text="AR-Projekt" transparent="1" foregroundColor="un808888" />
-    <widget source="ImageVersion" render="Label" position="11,160" size="580,300" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget source="ImageVersion" render="Label" position="-55,110" size="580,300" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1" />
     <widget backgroundColor="background" font="Regular;26" position="66,159" render="Label" size="700,35" source="FPVersion" transparent="1" />
     <widget backgroundColor="background" font="Regular;26" position="66,237" render="Label" size="700,35" source="TunerHeader" transparent="1" />
     <widget backgroundColor="background" font="Regular;24" position="70,325" render="Label" size="700,30" source="Tuner0" transparent="1" />
@@ -627,7 +626,7 @@
     <ePixmap alphatest="on" pixmap="AmikoSkin/buttons/blue.png" position="797,642" size="24,24" />
   </screen>
   <screen flags="wfNoBorder" name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection">
-    <ePixmap pixmap="AmikoSkin/menu/backCS.png" position="-1,4" size="1280,720" zPosition="-10" />
+    <ePixmap pixmap="AmikoSkin/menu/backCS.png" position="center,8" size="1280,720" zPosition="-10" />
     <widget backgroundColor="backtop" font="Regular;20" halign="right" position="987,57" render="Label" size="199,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%H:%M %h.%d %Y</convert>
     </widget>
@@ -635,7 +634,7 @@
     <ePixmap alphatest="blend" pixmap="AmikoSkin/buttons/menu.png" position="636,18" size="70,30" zPosition="3" />
     <eLabel backgroundColor="backtop" font="Regular; 30" halign="center" position="121,16" shadowColor="blue" size="510,34" text="Channel Selection" transparent="1" />
     <widget backgroundColor="background" font="Regular; 22" position="46,58" render="Label" shadowColor="blue" size="764,24" source="Title" transparent="1" />
-    <widget name="list" position="24,103" scrollbarMode="showOnDemand" selectionPixmap="AmikoSkin/menu/sp714_26.png" colorEventProgressbar="#269988" colorEventProgressbarBorder="#269988" colorEventProgressbarBorderSelected="#FFC50A" colorServiceDescription="darkgrey" colorServiceDescriptionSelected="#FFC50A" foregroundColorServiceNotAvail="#777777" serviceItemHeight="32" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" size="768,513" transparent="1" />
+    <widget name="list" position="24,104" scrollbarMode="showOnDemand" selectionPixmap="AmikoSkin/menu/sp714_26.png" colorEventProgressbar="#269988" colorEventProgressbarBorder="#269988" colorEventProgressbarBorderSelected="#FFC50A" colorServiceDescription="darkgrey" colorServiceDescriptionSelected="#FFC50A" foregroundColorServiceNotAvail="#777777" serviceItemHeight="32" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" size="768,513" transparent="1" />
     <widget alphatest="blend" position="1120,87" render="Picon" size="100,60" source="ServiceEvent" transparent="1" zPosition="5">
       <convert type="RefString">ServicelistRef</convert>
     </widget>
