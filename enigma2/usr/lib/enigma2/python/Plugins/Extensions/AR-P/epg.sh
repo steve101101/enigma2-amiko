@@ -1,33 +1,43 @@
 #!/bin/sh
 #Thanks to dillinger http://linux-sat.tv
 
-                if [ -f /media/hdd/epg.dat ]; then
-                rm /usr/media/hdd/epg.dat > /dev/null 2>&1
+        	echo "===================================================="
+    		echo "Файлы  подгружаемого  с  инета  E P G  находятся  в  папке  var/epg"
+		echo "                       usb - флешь  нам  не  понадобится."
+		echo "         Директория  var/epg  будет  очищаться  автоматически "
+                echo "                 перед  каждым  новым  запуском  плагина."
+                if [ -f /var/epg/epg.dat ]; then
+                rm -rf /var/epg/epg.dat
+                elif [ -f /var/epg/epg.dat.gz ]; then
+                rm -rf /var/epg/epg.dat.gz
                 fi
-echo "=============================================="
+                echo "===================================================="
  
         	echo " "
-    		echo "Downloading EPG file, please wait..."
-		echo " "
+    		echo "             Началаль  загрузка,  подождите......."
+		echo "    Можете  попить  кофейку  и  выкурить  сигарету ! "
+        	echo " "
     		sleep 2 
-		wget -q http://linux-sat.tv/epg/epg_new.dat.gz -O /hdd/epg.dat.gz 
+		wget -q http://linux-sat.tv/epg/epg_new.dat.gz -O /var/epg/epg.dat.gz 
 		if [ $? = 1 ]; then
 		echo " "
-    		echo "Sorry, the EPG file is not available!"
+    		echo "       Сори,  но  EPG  файл  пока  недоступен !"
 		echo " "
-    		echo "Please try later!"
+    		echo "    Пожалуйста,  попробуйте  загрузить  позже!"
 		echo " "
-		echo "=============================================="
+		echo "===================================================="
 		echo " "
 		exit 1
                 fi
-      		gzip -d /hdd/epg.dat.gz
+      		gzip -d /var/epg/epg.dat.gz
+                sleep 2
+                cp /var/epg/epg.dat /var/
 		sleep 2
-		echo "Enigma2 a restart to load the EPG data!"
+		echo "    Enigma2  перезапустится  после  окончания  загрузки!"
 		echo " "
-		echo "=============================================="
+		echo "===================================================="
 		echo " "
-		echo "Enjoy -:) "
-		echo "Restarting enigma2..."
+		echo "     В С Е  получилось.  Наслаждайтесь  программой  Т В !   "
+		echo "                  Перегружаюсь,  один  момент......."
 	        sleep 2
 	        killall -9 enigma2
