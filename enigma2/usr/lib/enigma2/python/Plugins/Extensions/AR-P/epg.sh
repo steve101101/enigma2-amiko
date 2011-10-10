@@ -6,10 +6,10 @@
 		echo "                       usb - флешь  нам  не  понадобится."
 		echo "         Директория  var/epg  будет  очищаться  автоматически "
                 echo "                 перед  каждым  новым  запуском  плагина."
-                if [ -f /var/epg/epg.dat ]; then
-                rm -rf /var/epg/epg.dat
-                elif [ -f /var/epg/epg.dat.gz ]; then
-                rm -rf /var/epg/epg.dat.gz
+                if [ -f /tmp/epg.dat ]; then
+                rm -rf /tmp/epg.dat
+                elif [ -f /tmp/epg.dat.gz ]; then
+                rm -rf /tmp/epg.dat.gz
                 fi
                 echo "===================================================="
  
@@ -18,7 +18,7 @@
 		echo "    Можете  попить  кофейку  и  выкурить  сигарету ! "
         	echo " "
     		sleep 2 
-		wget -q http://linux-sat.tv/epg/epg_new.dat.gz -O /var/epg/epg.dat.gz 
+		wget -q http://linux-sat.tv/epg/epg_new.dat.gz -O /tmp/epg.dat.gz 
 		if [ $? = 1 ]; then
 		echo " "
     		echo "       Сори,  но  EPG  файл  пока  недоступен !"
@@ -29,9 +29,9 @@
 		echo " "
 		exit 1
                 fi
-      		gzip -d /var/epg/epg.dat.gz
+      		gzip -d /tmp/epg.dat.gz
                 sleep 2
-                cp /var/epg/epg.dat /var/
+                cp /tmp/epg.dat /var/
 		sleep 2
 		echo "    Enigma2  перезапустится  после  окончания  загрузки!"
 		echo " "
