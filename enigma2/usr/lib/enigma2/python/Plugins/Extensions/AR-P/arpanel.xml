@@ -59,13 +59,21 @@ self.session.open(EmuStart)
 			</usersh>
                <usersh name="RestoreEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/RestoreEnigma2Settings.sh" confirmation="true" shortcut="3" help="(3) RestoreEnigma2Settings"  exit="no">
                     </usersh>
-		   </entry> 
+		   </entry>
+                         <entry name="PluginTools &gt;" shortcut="9" help="(9) PluginTools">
+<plugin name="PluginManager" target="" shortcut="1" help="(1) select PluginManager" exit="no">
+<code><![CDATA[
+from Screens.PluginBrowser import PluginBrowser
+self.session.open (PluginBrowser)
+]]></code>
+      </plugin>  
                 <usersh name="Ipkginstall from tmp" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/ipkginstall.sh" confirmation="true" shortcut="9" help="(9) Ipkginstall"  exit="no">
-                </usersh>    	        
+                </usersh> 
+                </entry>   	        
              <plugin name="MultiQuickButton" target="" shortcut="red" help="start MultiQuickButton " exit="no">	
 <code><![CDATA[
 from Plugins.Extensions.MultiQuickButton.plugin import *
 self.session.open(MultiQuickButton)
 ]]></code>
-      </plugin> 
+      </plugin>
  </menu>
