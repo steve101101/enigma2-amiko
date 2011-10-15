@@ -1,8 +1,0 @@
-<screen position="center,center" size="1100,600" title="" backgroundColor="transparent" flags="wfNoBorder">
-	<widget name="slikica" pixmap="/tmp/slika.jpg" position="803,66" zPosition="2" size="269,407" transparent="1" alphatest="on" />
-	<widget name="opisi" position="45,65" size="753,500" zPosition="10" font="Regular;22" halign="left" valign="top" backgroundColor="background" transparent="1"/>
-	<ePixmap position="0, 0" size="1100,600" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sbg.png" zPosition="-1" transparent="1" />
-	<eLabel position="30,60" size="1035,1" backgroundColor="white" />
-	<ePixmap position="846,480" size="200,115" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sp.png" alphatest="on" transparent="1" />
-	<widget name="nfilma" position="47,23" size="995,30" font="Regular;30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1"/>
-</screen>

@@ -1,6 +1,0 @@
-<screen position="center,center" size="1100,600" title="" backgroundColor="transparent" flags="wfNoBorder">
-	<ePixmap position="0,1" size="517,600" zPosition="-1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sbg1.png" />
-	<widget name="ntitle" position="30,12" size="455,33" font="Regular;30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" />
-	<eLabel position=" 20,55" size="475,1" backgroundColor="white" />
-	<eLabel position="20,475" size="475,1" backgroundColor="white" />
-	<ePixmap position="313,481" size="200,115" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sp.png" alphatest="on" />

@@ -1,8 +1,0 @@
-<screen position="120,80" size="550,150" flags="wfNoBorder" backgroundColor="transparent">
-	<widget name="ntitle" position="28,11" size="476,25" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" />
-	<widget name="liste" position="27,52" size="491,28" />
-	<ePixmap position="457,91" size="60,53" pixmap="skin_default/vkey_icon.png" transparent="1" zPosition="2" alphatest="on" />
-	<ePixmap position="0,0" size="550,150" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DD_Subt/skins/sbg3.png" zPosition="-1" />
-	<eLabel position="20,44" size="505,1" backgroundColor="white" zPosition="2" />
-	<eLabel position="20,87" size="505,1" backgroundColor="white" zPosition="5" />
-</screen>
