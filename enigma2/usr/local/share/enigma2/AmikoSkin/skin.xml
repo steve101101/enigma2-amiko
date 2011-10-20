@@ -137,7 +137,7 @@
     <widget backgroundColor="un333333" font="LCD;18" foregroundColor="red" halign="right" position="79,135" render="Label" size="70,22" source="global.CurrentTime" transparent="1" valign="top" zPosition="2">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
-    <widget backgroundColor="black" font="Regular;27" foregroundColor="un7fff" halign="left" position="71,23" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="240,28" source="session.CurrentService" transparent="1">
+    <widget backgroundColor="black" font="Regular;27" foregroundColor="un7fff" halign="left" position="41,25" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="339,28" source="session.CurrentService" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="black" font="Regular;36" foregroundColor="white2" halign="center" position="581,32" render="Label" shadowColor="red" shadowOffset="-1,-1" size="102,71" source="session.CurrentService" transparent="1">
@@ -187,12 +187,12 @@
       <convert type="FrontendInfo">SNR</convert>
     </widget>
   </screen>
-  <screen backgroundColor="transparent2" flags="wfNoBorder" name="SecondInfoBar" position="center,490" size="1280,240" title="Second InfoBar">
-    <ePixmap alphatest="blend" pixmap="AmikoSkin/infobar.png" position="center,18" size="1280,225" zPosition="-5" />
+  <screen backgroundColor="transparent2" flags="wfNoBorder" name="SecondInfoBar" position="20,490" size="1280,240" title="Second InfoBar">
+    <ePixmap alphatest="blend" pixmap="AmikoSkin/infobar.png" position="center,18" size="1280,226" zPosition="-5" />
     <widget backgroundColor="un333333" font="Uhr;33" foregroundColor="white2" halign="right" position="18,74" render="Label" size="114,108" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%h %d  %Y   %H:%M</convert>
     </widget>
-    <widget backgroundColor="black" font="Regular;27" foregroundColor="un7fff" halign="center" position="487,56" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="256,28" source="session.CurrentService" transparent="1">
+    <widget backgroundColor="black" font="Regular;27" foregroundColor="un7fff" halign="center" position="487,31" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="256,74" source="session.CurrentService" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="black" font="Regular;27" foregroundColor="white2" halign="center" position="58,24" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="86,29" source="session.CurrentService" transparent="1">
