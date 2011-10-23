@@ -1,0 +1,3 @@
+CWS_KEEPALIVE = yes
+CWS_INCOMING_PORT = 21000
+CWS = server port name pass 0102030405060708091011121314 wan cardserv
