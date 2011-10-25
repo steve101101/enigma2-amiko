@@ -2,10 +2,8 @@
 #Thanks to dillinger http://linux-sat.tv
 
         	echo "===================================================="
-    		echo "Файлы  подгружаемого  с  инета  E P G  находятся  в  папке  var/epg"
+    		echo "Файлы  подгружаемого  с  инета  E P G  находятся  в  папке  /var"
 		echo "                       usb - флешь  нам  не  понадобится."
-		echo "         Директория  var/epg  будет  очищаться  автоматически "
-                echo "                 перед  каждым  новым  запуском  плагина."
                 if [ -f /tmp/epg.dat ]; then
                 rm -rf /tmp/epg.dat
                 elif [ -f /tmp/epg.dat.gz ]; then
@@ -15,8 +13,6 @@
  
         	echo " "
     		echo "             Началаль  загрузка,  подождите......."
-		echo "    Можете  попить  кофейку  и  выкурить  сигарету ! "
-        	echo " "
     		sleep 2 
 		wget -q http://linux-sat.tv/epg/epg_new.dat.gz -O /tmp/epg.dat.gz 
 		if [ $? = 1 ]; then

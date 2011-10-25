@@ -100,6 +100,9 @@ self.session.openWithCallback(msgClosed, FactoryReset)
 			<item level="2" text="Restart GUI" entryID="restart_enigma"><screen module="Standby" screen="TryQuitMainloop">3</screen></item>
 			<item text="Deep Standby" requires="DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
 			<item text="Shutdown" requires="!DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
-			<item text="Restart Spark" entryID="restart_spark"><screen module="Spark" /></item>
+			<item text="Restart Spark" entryID="restart_spark">
+<code>
+from Screens.Spark import Spark
+self.session.open (Spark)</code></item>    
 		</menu>
 </menu>
