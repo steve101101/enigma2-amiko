@@ -12,7 +12,7 @@
                 echo "===================================================="
  
         	echo " "
-    		echo "             Началаль  загрузка,  подождите......."
+    		echo "             Началась  загрузка,  подождите......."
     		sleep 2 
 		wget -q http://linux-sat.tv/epg/epg_new.dat.gz -O /tmp/epg.dat.gz 
 		if [ $? = 1 ]; then
