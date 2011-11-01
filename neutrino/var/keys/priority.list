@@ -1,0 +1,71 @@
+#ORF ( Cryptoworks )
+X: { 0D 05 }
+# CanalSat 19E
+V: { 03 28 20 }
+# BIS 19E
+V: { 02 08 10 }
+# RTVi 13E
+V: { 02 2C 00 }
+# ART 13E
+V: { 02 11 10 }
+# HRT 13E
+V: { 03 0A 00 }
+# SRG Swiss
+V: { 02 38 00 }
+# Aljazeera Sport
+V: { 03 07 00 }
+# TIN 13E      
+V: { 02 12 00 }
+# MCT & SexTV 13E&9E
+V: { 02 3B 00 }
+# FreeX & DorcelTV 13E (add 025100 to ignore.list for fast zapping)
+V: { 02 44 00 }
+# SexView 13E
+V: { 02 09 10 }
+# Private Spice 13E
+V: { 03 25 00 }
+# RedLight & SexOnTV 9E&13E 
+V: { 02 51 00 }
+# NTV Mir 5E (If you dont have a Viasat, for fast zapping you must unrem (#) this line and delete X: ( 09 0F } from proirity.list and add it to ignore.list for fast zapping)
+#V: { 02 31 00 }
+# MaxTV 5E      
+V: { 02 4F 00 }
+# ICTV 4W
+V: { 02 47 00 }
+
+
+# use this seca prov first
+# Digital+ 19E
+S: { 41 06 }
+# Cyfra+ 13E
+S: { 00 68 }
+S: { 00 6A }
+
+# use this caid first
+
+# Platforma 9E
+X: { 4A E1 }
+# Premiere 19E
+X: { 17 02 }
+# HD+ 19E
+X: { 18 30 } 
+# UPC Direct 19E
+X: { 0D 02 }
+# Arena 19E
+X: { 0D 22 }
+# SkyItaly 13E
+X: { 09 19 }
+# ITV Partner 
+X: { 0D 06 }
+# Viasat 5E
+X: { 09 0F }  (If you need fast zapping Viasat, add to ignore.list V: { 02 3D 00 }, But after you louse Kanal Ukraine channel
+#Nova caid/chids Greece 13E
+X: { 06 04 }
+I: { 00 14 }
+I: { 00 5A }
+I: { 00 E0 }
+#Telenor
+I: { 0B 00 }
+
+
+
