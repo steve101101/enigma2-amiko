@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. /var/config/emu.conf
+. /var/config/emu.conf               
 
 
 aktion="$1"
