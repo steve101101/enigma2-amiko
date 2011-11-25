@@ -1,7 +1,7 @@
 #!/bin/sh
 
-input=$1
-
+input=$1            
+                                              
 pngfile="/tmp/vdump.png"
 vmode=`cat /proc/stb/video/videomode`
 stream_aspect="undef"
