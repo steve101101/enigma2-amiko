@@ -53,8 +53,12 @@ self.session.open(EmuStart)
 			</usersh>	
 		   </entry> 
                <entry name="Backup >" shortcut="8" help="(8)Backup" >
-	      <usersh name="BackupFlash" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/backup.sh" confirmation="true" shortcut="1" help="(1) BackupFlash"  exit="no"> 
-              </usersh>	
+	      <plugin name="FlashBackup" target="" shortcut="1" help="(1) select PluginManager" exit="no">
+<code><![CDATA[
+from Screens.FlashBackup import FlashBackup
+self.session.open (FlashBackup)
+]]></code>
+      </plugin>	
                <usersh name="BackupEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/BackupEnigma2Settings.sh" confirmation="true" shortcut="2" help="(2) BackupEnigma2Settings"  exit="no">
 			</usersh>
                <usersh name="RestoreEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/RestoreEnigma2Settings.sh" confirmation="true" shortcut="3" help="(3) RestoreEnigma2Settings"  exit="no">
