@@ -2,5 +2,5 @@
 
 emuname =Mgcamd
 binname =mgcamd
-startcam =/var/bin/mgcamd > /dev/null  && echo "MGCamd activated" || echo "MGCamd error"
+startcam =/usr/bin/cam/mgcamd > /dev/null  && echo "MGCamd activated" || echo "MGCamd error"
 stopcam =killall -9  mgcamd
