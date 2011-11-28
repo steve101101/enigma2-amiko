@@ -35,14 +35,8 @@ self.session.open(EmuStart)
 			</usersh>
                <usersh name="PiconHdd" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/picon_loadhdd.sh" confirmation="true" shortcut="2" help="(2) PiconHdd"  exit="no">
 			</usersh>	
-		   </entry> 
-              <entry name="AudioDTS >" shortcut="6" help="(6)AudioDTS" >
-	      <usersh name="DTS_on" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/DTS.sh" confirmation="true" shortcut="1" help="(1) DTS_on"  exit="no">
-			</usersh>
-               <usersh name="DTS_of" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/DTS1.sh" confirmation="true" shortcut="2" help="(2) DTS_of"  exit="no">
-			</usersh>	
-		   </entry> 
-               <entry name="SETTINGS >" shortcut="7" help="(7)SETTINGS" >
+		   </entry>  
+               <entry name="SETTINGS >" shortcut="6" help="(7)SETTINGS" >
 	      <usersh name="Gensh-4sat" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/gensh4sat.sh" confirmation="true" shortcut="1" help="(1) Gensh-4sat"  exit="no">
 			</usersh>
                <usersh name="Gensh-astra" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/gensh_astra.sh" confirmation="true" shortcut="2" help="(2) Gensh-astra"  exit="no">
@@ -52,7 +46,7 @@ self.session.open(EmuStart)
                <usersh name="Settings_jodasa" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Settings_jodasa.sh" confirmation="true" shortcut="4" help="(4) Settings_jodasa"  exit="no">
 			</usersh>	
 		   </entry> 
-               <entry name="Backup >" shortcut="8" help="(8)Backup" >
+               <entry name="Backup >" shortcut="7" help="(7)Backup" >
 	      <plugin name="FlashBackup" target="" shortcut="1" help="(1) select PluginManager" exit="no">
 <code><![CDATA[
 from Screens.FlashBackup import FlashBackup
@@ -64,7 +58,7 @@ self.session.open (FlashBackup)
                <usersh name="RestoreEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/RestoreEnigma2Settings.sh" confirmation="true" shortcut="3" help="(3) RestoreEnigma2Settings"  exit="no">
                     </usersh>
 		   </entry>
-                         <entry name="PluginTools &gt;" shortcut="9" help="(9) PluginTools">
+                         <entry name="PluginTools &gt;" shortcut="8" help="(8) PluginTools">
 <plugin name="PluginManager" target="" shortcut="1" help="(1) select PluginManager" exit="no">
 <code><![CDATA[
 from Screens.PluginBrowser import PluginBrowser
@@ -74,7 +68,7 @@ self.session.open (PluginBrowser)
                 <usersh name="Ipkginstall from tmp" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/ipkginstall.sh" confirmation="true" shortcut="9" help="(9) Ipkginstall"  exit="no">
                 </usersh> 
                 </entry>   	        
-             <plugin name="MultiQuickButton" target="" shortcut="red" help="start MultiQuickButton " exit="no">	
+             <plugin name="MultiQuickButton" target="" shortcut="9" help="start MultiQuickButton " exit="no">	
 <code><![CDATA[
 from Plugins.Extensions.MultiQuickButton.plugin import *
 self.session.open(MultiQuickButton)
