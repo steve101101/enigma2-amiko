@@ -1,39 +1,43 @@
 #!/bin/sh
-#Thanks to dillinger http://linux-sat.tv
 
-        	echo "===================================================="
-    		echo "Файлы  подгружаемого  с  инета  E P G  находятся  в  папке  /var"
-		echo "                       usb - флешь  нам  не  понадобится."
-                if [ -f /tmp/epg.dat ]; then
-                rm -rf /tmp/epg.dat
-                elif [ -f /tmp/epg.dat.gz ]; then
-                rm -rf /tmp/epg.dat.gz
-                fi
-                echo "===================================================="
- 
-        	echo " "
-    		echo "             Началась  загрузка,  подождите......."
-    		sleep 2 
-		wget -q http://linux-sat.tv/epg/epg_new.dat.gz -O /tmp/epg.dat.gz 
-		if [ $? = 1 ]; then
+	if ! cat /usr/bin/enigma2.sh | grep epg.dat >/dev/null; then
+		{
+			cp /usr/bin/enigma2.sh /usr/bin/enigma2.sh.xmltvbak
+			sed '3i[ -f /media/hdd/epg_new.dat ] && cp /media/hdd/epg_new.dat /media/hdd/epg.dat' /usr/bin/enigma2.sh.xmltvbak > /usr/bin/enigma2.sh
+		}
+	fi
+
+		echo "=============================================="
 		echo " "
-    		echo "       Сори,  но  EPG  файл  пока  недоступен !"
+    		echo "Downloading EPG file, please wait..."
 		echo " "
-    		echo "    Пожалуйста,  попробуйте  загрузить  позже!"
+    		sleep 5
+    	if [ -f /etc/epgdat ] ; then
+      		epgfile=`more /etc/epgdat`
+    	else
+      		epgfile="epg_new.dat.gz" 
+    	fi
+		wget -q http://linux-sat.tv/epg/$epgfile -O /hdd/epg_new.dat.gz 
+	if [ $? = 1 ]; then
 		echo " "
-		echo "===================================================="
+    		echo "Sorry, the EPG file is not available!"
+		echo " "
+    		echo "Please try later!"
+		echo " "
+		echo "=============================================="
 		echo " "
 		exit 1
-                fi
-      		gzip -d /tmp/epg.dat.gz
-                sleep 2
-                cp /tmp/epg.dat /var/
-		sleep 2
-		echo "    Enigma2  перезапустится  после  окончания  загрузки!"
+	fi
+		gzip -df /hdd/epg_new.dat.gz
+		cp -f /hdd/epg_new.dat /hdd/epg.dat
+		rm -f epg_new.dat.gz
+		sleep 5
+		echo "EPG file was loaded successfully!!!"
 		echo " "
-		echo "===================================================="
+		echo "Enigma2 needs a restart to load the EPG data!"
 		echo " "
-		echo "     В С Е  получилось.  Наслаждайтесь  программой  Т В !   "
-		echo "                  Перегружаюсь,  один  момент......."
-	        sleep 2
-	        killall -9 enigma2
+		echo "=============================================="
+		echo " "
+		echo "Enjoy -:) "
+		sleep 5
+		killall -9 enigma2 >/dev/null 2>&1

@@ -8,8 +8,12 @@ from Screens.ScriptStart import ScriptStart
 self.session.open (ScriptStart)
 ]]></code>
       </plugin> 
-                 <usersh name="EpgUpdate" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/epg.sh" confirmation="true" shortcut="2" help="(2) EpgStart"  exit="no">
-               </usersh> 
+<plugin name="EPGstart" target="" shortcut="2" help="(2) Download EPG" exit="no">
+<code><![CDATA[
+from Plugins.Extensions.QuickEPG.plugin import *
+self.session.open (QuickEPGPlugin)
+]]></code>
+      </plugin>
 <plugin name="EmuStart" target="" shortcut="3" help="(3) EmuStart" exit="no">	
 <code><![CDATA[
 from Plugins.Extensions.EmuStart.plugin import *
