@@ -1,12 +1,5 @@
 #!/bin/sh
 
-	if ! cat /usr/bin/enigma2.sh | grep epg.dat >/dev/null; then
-		{
-			cp /usr/bin/enigma2.sh /usr/bin/enigma2.sh.xmltvbak
-			sed '3i[ -f /media/hdd/epg_new.dat ] && cp /media/hdd/epg_new.dat /media/hdd/epg.dat' /usr/bin/enigma2.sh.xmltvbak > /usr/bin/enigma2.sh
-		}
-	fi
-
 		echo "=============================================="
 		echo " "
     		echo "Downloading EPG file, please wait..."
