@@ -35,37 +35,36 @@ if [ ! -z $WLAN_STARTMODE ] && [ $WLAN_STARTMODE == "load" ]; then
 	[ -z $WLAN_MODULE ] && echo "[wlan] no applicable USB WLAN device found" | tee -a $WLAN_LOG && return
 	IFS=$MEM
 	echo "[wlan] loading $WLAN_MODULE.ko" | tee -a $WLAN_LOG
-	[ $WLAN_MODULE == "rt73" ] && insmod /lib/modules/funcemu.ko
 	insmod /lib/modules/$WLAN_MODULE.ko
 	sleep 1
 	[ -z "`lsmod | grep $WLAN_MODULE`" ] && echo "[wlan] could not load $WLAN_MODULE" | tee -a $WLAN_LOG && return
 	sleep 1
 	case $WLAN_MODULE in
-	    zd1211 | zd1211b )		WLAN_IF=eth1
-					WLAN_DRV=zydas
-					;;
-	    rt73 )			WLAN_IF=rausb0
-					WLAN_DRV=ralink
-					;;
-	    rt2870sta | rt3070sta | rt5370sta )	WLAN_IF=ra0
+#	    zd1211 | zd1211b )		WLAN_IF=eth1
+#					WLAN_DRV=zydas
+#					;;
+#	    rt73 )			WLAN_IF=rausb0
+#					WLAN_DRV=ralink
+#					;;
+	 8712u | 8192cu  | rt2870sta | rt3070sta | rt5370sta )	WLAN_IF=wlan0
 					WLAN_DRV=wext
 					;;
 	    * )				echo "[wlan] Unknown module $WLAN_MODULE" | tee -a $WLAN_LOG && return
 					;;
 	esac
-	ifconfig $WLAN_IF 0.0.0.0 up
+	ifconfig $WLAN_IF up
 	[ -z "`ifconfig | grep $WLAN_IF`" ] && rmmod $WLAN_MODULE && echo "[wlan] $WLAN_IF not ready" | tee -a $WLAN_LOG && return
 	sleep 1
 
 	if [ -z "`cat /etc/network/interfaces | grep \"auto $WLAN_IF\"`" ]; then
 		echo "[wlan] wireless interface $WLAN_IF not activated" | tee -a $WLAN_LOG
-		python /etc/network/wlanscan.py $WLAN_IF
+#		python /etc/network/wlanscan.py $WLAN_IF
 		ifconfig $WLAN_IF down
 		return
 	fi
 	if [ ! -f /etc/wpa_supplicant.conf ]; then
 		echo "[wlan] wireless lan not yet configured" | tee -a $WLAN_LOG
-		python /etc/network/wlanscan.py $WLAN_IF
+#		python /etc/network/wlanscan.py $WLAN_IF
 		ifconfig $WLAN_IF down
 		return
 	fi
@@ -89,20 +88,20 @@ if [ -z $WLAN_STARTMODE ] || [ $WLAN_STARTMODE == "load" ] || [ $WLAN_STARTMODE 
 			*           )	echo -e "[wlan] authentification to access point $AP failed" | tee -a $WLAN_LOG
 			;;
 		esac
-		python /etc/network/wlanscan.py $WLAN_IF
+#		python /etc/network/wlanscan.py $WLAN_IF
 		kill -9 `cat /var/run/wpa_supplicant.pid`
 		rm /var/run/wpa_supplicant.pid
 		ifconfig $WLAN_IF down
 		return
 	fi
-	python /etc/network/wlanscan.py $WLAN_IF
-	startNetwork $WLAN_IF
-	( startWaitfor "/tmp/.networkready" 30
-	  IP=`ifconfig $WLAN_IF | grep -m1 "inet addr" | sed s/"^\s*"// | sed s/" \+"/" "/g | cut -d " " -f2 | cut -d ":" -f2`
-	  NET=`echo ${IP%.*}`
-	  /usr/sbin/fping -l -b12 -q -i2000 -g $NET.1 $NET.254 2> /dev/null &
-	  echo "[wlan] completed, now checking recordshare by hotplug" | tee -a $WLAN_LOG
-	  /sbin/hotplug.sh checkRecordShare ) &
+#	python /etc/network/wlanscan.py $WLAN_IF
+#	startNetwork $WLAN_IF
+#	( startWaitfor "/tmp/.networkready" 30
+#	  IP=`ifconfig $WLAN_IF | grep -m1 "inet addr" | sed s/"^\s*"// | sed s/" \+"/" "/g | cut -d " " -f2 | cut -d ":" -f2`
+#	  NET=`echo ${IP%.*}`
+#	  /usr/sbin/fping -l -b12 -q -i2000 -g $NET.1 $NET.254 2> /dev/null &
+#	  echo "[wlan] completed, now checking recordshare by hotplug" | tee -a $WLAN_LOG
+#	  /sbin/hotplug.sh checkRecordShare ) &
 else
 	echo "[wlan] unknown wireless startmode $WLAN_STARTMODE" | tee -a $WLAN_LOG && break
 fi
