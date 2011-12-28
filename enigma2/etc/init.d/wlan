@@ -43,10 +43,7 @@ if [ ! -z $WLAN_STARTMODE ] && [ $WLAN_STARTMODE == "load" ]; then
 	case $WLAN_MODULE in
 	    zd1211 | zd1211b )		WLAN_IF=eth1
 					WLAN_DRV=zydas
-#					;;
-#	    rt73 )			WLAN_IF=rausb0
-#					WLAN_DRV=ralink
-#					;;
+					;;
 	 8712u | 8192cu  | rt2870sta | rt3070sta | rt5370sta )	WLAN_IF=wlan0
 					WLAN_DRV=wext
 					;;
