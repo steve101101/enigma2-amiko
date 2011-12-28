@@ -35,13 +35,14 @@ if [ ! -z $WLAN_STARTMODE ] && [ $WLAN_STARTMODE == "load" ]; then
 	[ -z $WLAN_MODULE ] && echo "[wlan] no applicable USB WLAN device found" | tee -a $WLAN_LOG && return
 	IFS=$MEM
 	echo "[wlan] loading $WLAN_MODULE.ko" | tee -a $WLAN_LOG
+	[ $WLAN_MODULE == "rt73" ] && insmod /lib/modules/rt2x00lib.ko && insmod /lib/modules/rt2x00usb.ko
 	insmod /lib/modules/$WLAN_MODULE.ko
 	sleep 1
 	[ -z "`lsmod | grep $WLAN_MODULE`" ] && echo "[wlan] could not load $WLAN_MODULE" | tee -a $WLAN_LOG && return
 	sleep 1
 	case $WLAN_MODULE in
-#	    zd1211 | zd1211b )		WLAN_IF=eth1
-#					WLAN_DRV=zydas
+	    zd1211 | zd1211b )		WLAN_IF=eth1
+					WLAN_DRV=zydas
 #					;;
 #	    rt73 )			WLAN_IF=rausb0
 #					WLAN_DRV=ralink
