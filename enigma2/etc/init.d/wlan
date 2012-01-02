@@ -1,16 +1,8 @@
 #######/bin/sh
-WLAN_STARTMODE=load
-WLAN_LOG=/tmp/wlan.log
-if [ ! -z $WLAN_STARTMODE ] && [ $WLAN_STARTMODE == "load" ]; then
-	if  [ ! "$debug" = 'off' ]; then
-		echo $CMD ["$INPUT"] 
-	fi
-        
-	[ ! -f /etc/Wireless/wlan.usbmap ] && rm -f /etc/Wireless/wlan_module && return
 	WLAN_MODULE=
 	MEM=$IFS
 	IFS=$'\012'
-	echo "[wlan] searching wireless-module ..." | tee -a $WLAN_LOG
+	echo "[wlan] searching wireless-module ..."
 	USBIDS=`cat /proc/bus/usb/devices | grep ^P:`
 	if [ -f /etc/Wireless/wlan_module ]; then
 		WLAN_MODULE=`cat /etc/Wireless/wlan_module | awk {'print $1'}`
@@ -34,23 +26,7 @@ if [ ! -z $WLAN_STARTMODE ] && [ $WLAN_STARTMODE == "load" ]; then
 	fi
 	[ -z $WLAN_MODULE ] && echo "[wlan] no applicable USB WLAN device found" | tee -a $WLAN_LOG && return
 	IFS=$MEM
-	echo "[wlan] loading $WLAN_MODULE.ko" | tee -a $WLAN_LOG
+	echo "[wlan] loading $WLAN_MODULE.ko" 
 	[ $WLAN_MODULE == "rt73" ] && insmod /lib/modules/rt2x00lib.ko && insmod /lib/modules/rt2x00usb.ko
 	insmod /lib/modules/$WLAN_MODULE.ko
 	sleep 1
-	[ -z "`lsmod | grep $WLAN_MODULE`" ] && echo "[wlan] could not load $WLAN_MODULE" | tee -a $WLAN_LOG && return
-	sleep 1
-	case $WLAN_MODULE in
-	    zd1211 | zd1211b )		WLAN_IF=eth1
-					WLAN_DRV=zydas
-					;;
-	 8712u | 8192cu  | rt2870sta | rt3070sta | rt5370sta )	WLAN_IF=wlan0
-					WLAN_DRV=wext
-					;;
-	    * )				echo "[wlan] Unknown module $WLAN_MODULE" | tee -a $WLAN_LOG && return
-					;;
-	esac
-	ifconfig $WLAN_IF up
-	[ -z "`ifconfig | grep $WLAN_IF`" ] && rmmod $WLAN_MODULE && echo "[wlan] $WLAN_IF not ready" | tee -a $WLAN_LOG && return
-	sleep 1
-fi
