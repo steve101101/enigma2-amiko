@@ -98,11 +98,11 @@ self.session.openWithCallback(msgClosed, FactoryReset)
 			<item text="Deep Standby" requires="DeepstandbySupport" entryID="deep_standby"><screen module="Standby" screen="TryQuitMainloop">1</screen></item>
 			<item text="Standby" entryID="standby"><screen module="Standby" screen="Standby"/></item>
 			<item text="Restart" entryID="restart"><screen module="Standby" screen="TryQuitMainloop">2</screen></item>
-			<item text="Restart Titan" entryID="restart_titan">
+			<item text="Go2Titan" entryID="restart_titan">
 <code>
 from Screens.Titan import Titan
 self.session.open (Titan)</code></item> 
-			<item text="Restart Spark" entryID="restart_spark">
+			<item text="Go2Spark" entryID="restart_spark">
 <code>
 from Screens.Spark import Spark
 self.session.open (Spark)</code></item>    
