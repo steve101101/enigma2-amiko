@@ -129,7 +129,7 @@
     <color color="black" name="WindowTitleBackground" />
   </windowstyle>
   <screen backgroundColor="transparent2" flags="wfNoBorder" name="InfoBar" position="center,490" size="1280,240" title="Infobar">
-    <ePixmap alphatest="blend" pixmap="AmikoSkin/infobar.png" position="19,20" size="1340,225" zPosition="-5" />
+    <ePixmap alphatest="blend" pixmap="AmikoSkin/infobar.png" position="20,21" size="1352,225" zPosition="-5" />
     <ePixmap alphatest="blend" pixmap="AmikoSkin/freeTVCS.png" position="1164,66" size="40,30" zPosition="3" />
     <widget backgroundColor="un333333" font="Uhr;36" foregroundColor="white" halign="right" position="33,128" render="Label" size="92,37" source="global.CurrentTime" transparent="1" valign="top" zPosition="2">
       <convert type="ClockToText">Default</convert>
@@ -140,43 +140,43 @@
     <widget backgroundColor="black" font="Regular;27" foregroundColor="un7fff" halign="left" position="41,25" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="339,28" source="session.CurrentService" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget backgroundColor="black" font="Regular;36" foregroundColor="white2" halign="center" position="581,32" render="Label" shadowColor="red" shadowOffset="-1,-1" size="102,71" source="session.CurrentService" transparent="1">
+    <widget backgroundColor="black" font="Regular;36" foregroundColor="white2" halign="center" position="581,26" render="Label" shadowColor="red" shadowOffset="-1,-1" size="102,48" source="session.CurrentService" transparent="1">
       <convert type="ExtendedServiceInfo">ServiceNumber</convert>
     </widget>
-    <widget backgroundColor="black" font="blu;28" foregroundColor="white2" halign="right" position="946,26" render="Label" size="269,22" source="session.CurrentService" transparent="1">
+    <widget backgroundColor="black" font="blu;28" foregroundColor="white2" halign="right" position="946,29" render="Label" size="269,22" source="session.CurrentService" transparent="1">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <widget alphatest="blend" position="38,62" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="10">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget alphatest="blend" position="899,112" render="PicProv" size="100,60" source="session.CurrentService" transparent="1" zPosition="10">
+    <widget alphatest="blend" position="904,112" render="PicProv" size="100,60" source="session.CurrentService" transparent="1" zPosition="10">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <widget alphatest="on" position="1016,112" render="PiconSatTV" size="100,60" source="session.CurrentService" transparent="1" zPosition="2" />
     <!--<ePixmap alphatest="blend" pixmap="AmikoSkin/bt1.png" position="810,118" size="150,40" zPosition="22" /> -->
-    <widget backgroundColor="background" font="list;23" halign="left" position="171,117" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="62,26" source="session.Event_Now" transparent="1">
+    <widget backgroundColor="background" font="list;23" halign="left" position="204,80" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="62,26" source="session.Event_Now" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="background" font="listf;25" foregroundColor="white" halign="left" noWrap="1" position="241,112" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="497,33" source="session.Event_Now" transparent="1" zPosition="21">
+    <widget backgroundColor="background" font="listf;25" foregroundColor="white" halign="left" noWrap="1" position="271,78" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="529,33" source="session.Event_Now" transparent="1" zPosition="21">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" font="list; 17" halign="right" position="753,113" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="100,22" source="session.Event_Now" transparent="1" zPosition="5">
+    <widget backgroundColor="background" font="list; 17" halign="right" position="806,83" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="93,22" source="session.Event_Now" transparent="1" zPosition="5">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget pixmap="AmikoSkin/slider.png" position="172,153" render="Progress" size="566,15" source="session.Event_Now" transparent="1" zPosition="3">
+    <widget pixmap="AmikoSkin/slider.png" position="206,114" render="Progress" size="597,8" source="session.Event_Now" transparent="1" zPosition="3">
       <convert type="EventTime">Progress</convert>
     </widget>
     <!--<ePixmap alphatest="blend" pixmap="AmikoSkin/bt2.png" position="810,162" size="150,40" zPosition="22" />-->
-    <widget backgroundColor="background" font="list; 22" foregroundColor="darkgrey" halign="left" position="170,173" render="Label" size="62,26" source="session.Event_Next" transparent="1">
+    <widget backgroundColor="background" font="list; 22" foregroundColor="darkgrey" halign="left" position="206,127" render="Label" size="62,26" source="session.Event_Next" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="background" font="list; 25" foregroundColor="darkgrey" halign="left" noWrap="1" position="242,172" render="Label" size="497,33" source="session.Event_Next" transparent="1" zPosition="21">
+    <widget backgroundColor="background" font="list; 25" foregroundColor="darkgrey" halign="left" noWrap="1" position="271,123" render="Label" size="526,33" source="session.Event_Next" transparent="1" zPosition="21">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget backgroundColor="background" font="list; 22" foregroundColor="darkgrey" halign="right" position="750,177" render="Label" size="106,26" source="session.Event_Next" transparent="1">
+    <widget backgroundColor="background" font="list; 22" foregroundColor="darkgrey" halign="right" position="803,126" render="Label" size="96,26" source="session.Event_Next" transparent="1">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
@@ -192,14 +192,11 @@
     <widget backgroundColor="un333333" font="Uhr;33" foregroundColor="white2" halign="right" position="18,74" render="Label" size="114,108" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%h %d  %Y   %H:%M</convert>
     </widget>
-    <widget backgroundColor="black" font="Regular;27" foregroundColor="un7fff" halign="center" position="487,31" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="256,74" source="session.CurrentService" transparent="1">
+    <widget backgroundColor="black" font="Regular;27" foregroundColor="un7fff" halign="center" position="350,25" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="389,43" source="session.CurrentService" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="black" font="Regular;27" foregroundColor="white2" halign="center" position="58,24" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="86,29" source="session.CurrentService" transparent="1">
       <convert type="ExtendedServiceInfo">ServiceNumber</convert>
-    </widget>
-    <widget alphatest="blend" position="167,120" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="10">
-      <convert type="ServiceName">Reference</convert>
     </widget>
     <ePixmap alphatest="blend" pixmap="AmikoSkin/icons/ico_dolby_off.png" position="877,79" size="57,20" zPosition="1" />
     <widget alphatest="blend" pixmap="AmikoSkin/icons/ico_dolby_on.png" position="891,79" render="Pixmap" size="46,20" source="session.CurrentService" zPosition="2">
@@ -222,10 +219,10 @@
       <convert type="ValueRange">721,1980</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget backgroundColor="un353e575e" font="Regular;18" halign="left" position="275,122" render="Label" shadowColor="red" size="498,20" source="session.CurrentService" transparent="1">
+    <widget backgroundColor="un353e575e" font="Regular;18" halign="left" position="255,84" render="Label" shadowColor="red" size="498,20" source="session.CurrentService" transparent="1">
       <convert type="ExtremeInfo">CaidInfo</convert>
     </widget>
-    <widget backgroundColor="un353e575e" font="Regular;18" halign="left" position="276,153" render="Label" shadowColor="red" shadowOffset="-1,-1" size="511,20" source="session.CurrentService" transparent="1" zPosition="4">
+    <widget backgroundColor="un353e575e" font="Regular;18" halign="left" position="244,126" render="Label" shadowColor="red" shadowOffset="-1,-1" size="511,20" source="session.CurrentService" transparent="1" zPosition="4">
       <convert type="ExtremeInfo">EcmInfo</convert>
     </widget>
     <eLabel backgroundColor="background" font="Regular;18" halign="left" position="272,182" shadowColor="green" shadowOffset="-1,-1" size="50,22" text="CPU" transparent="1" zPosition="4" />
@@ -371,6 +368,7 @@
       <convert type="ClockToText">Format:%H:%M   %h %d   %Y</convert>
     </widget>
     <widget backgroundColor="black" font="Regular; 35" foregroundColor="white" halign="center" position="82,75" render="Label" shadowColor="blue" size="365,40" source="title" transparent="1" />
+    <widget backgroundColor="transparent2" position="756,105" render="Pig" size="496,356" source="session.VideoPicture" zPosition="3" />
     <widget enableWrapAround="1" position="81,134" render="Listbox" selectionPixmap="AmikoSkin/menu/sp350_50.png" scrollbarMode="showNever" size="368,516" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20,6), size = (455,32), flags = RT_HALIGN_LEFT, text =0) ],
@@ -414,6 +412,7 @@
       <convert type="ClockToText">Format:%H:%M   %h %d   %Y</convert>
     </widget>
     <widget backgroundColor="black" font="Regular; 35" foregroundColor="white" halign="center" position="81,77" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="365,40" source="title" transparent="1" />
+    <widget backgroundColor="transparent2" position="756,105" render="Pig" size="496,356" source="session.VideoPicture" zPosition="3" />
     <widget enableWrapAround="1" position="82,131" render="Listbox" selectionPixmap="AmikoSkin/menu/sp350_50.png" scrollbarMode="showNever" size="368,462" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20,6), size = (455,32), flags = RT_HALIGN_LEFT, text =0) ],
@@ -429,6 +428,7 @@
       <convert type="ClockToText">Format:%H:%M   %h %d   %Y</convert>
     </widget>
     <widget backgroundColor="black" font="Regular; 35" foregroundColor="white" halign="center" position="81,78" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="365,40" source="title" transparent="1" />
+    <widget backgroundColor="transparent2" position="756,105" render="Pig" size="496,356" source="session.VideoPicture" zPosition="3" />
     <widget enableWrapAround="1" position="81,135" render="Listbox" selectionPixmap="AmikoSkin/menu/sp350_50.png" scrollbarMode="showNever" size="368,462" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20,6), size = (455,32), flags = RT_HALIGN_LEFT, text =0) ],
@@ -459,6 +459,7 @@
       <convert type="ClockToText">Format:%H:%M   %h %d   %Y</convert>
     </widget>
     <widget backgroundColor="black" font="Regular; 35" foregroundColor="white" halign="center" position="80,78" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="365,40" source="title" transparent="1" />
+    <widget backgroundColor="transparent2" position="756,105" render="Pig" size="496,356" source="session.VideoPicture" zPosition="3" />
     <widget enableWrapAround="1" position="79,133" render="Listbox" selectionPixmap="AmikoSkin/menu/sp350_40.png" scrollbarMode="showNever" size="368,462" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (15, 5), size = (372, 30), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -489,6 +490,7 @@
       <convert type="ClockToText">Format:%H:%M   %h %d   %Y</convert>
     </widget>
     <widget backgroundColor="black" font="Regular; 35" foregroundColor="white" halign="center" position="79,79" render="Label" shadowColor="blue" shadowOffset="-1,-1" size="365,40" source="title" transparent="1" />
+    <widget backgroundColor="transparent2" position="756,105" render="Pig" size="496,356" source="session.VideoPicture" zPosition="3" />
     <widget enableWrapAround="1" position="81,135" render="Listbox" selectionPixmap="AmikoSkin/menu/sp350_50.png" scrollbarMode="showNever" size="368,462" source="menu" transparent="1">
       <convert type="TemplatedMultiContent">
 {"template": [ MultiContentEntryText(pos = (20,6), size = (455,32), flags = RT_HALIGN_LEFT, text =0) ],
@@ -627,7 +629,7 @@
     <ePixmap alphatest="on" pixmap="AmikoSkin/buttons/blue.png" position="797,648" size="24,24" />
   </screen>
   <screen flags="wfNoBorder" name="ChannelSelection" position="10,center" size="1280,720" title="Channel Selection">
-    <ePixmap pixmap="AmikoSkin/menu/backCS.png" position="0,0" size="1280,720" zPosition="-10" />
+    <ePixmap pixmap="AmikoSkin/menu/backCS.png" position="1,center" size="1280,720" zPosition="-10" />
     <widget backgroundColor="backtop" font="Regular;20" halign="right" position="924,57" render="Label" size="199,25" source="global.CurrentTime" transparent="1">
       <convert type="ClockToText">Format:%H:%M %h.%d %Y</convert>
     </widget>
@@ -642,22 +644,10 @@
     <widget backgroundColor="background2" font="Regular;22" foregroundColor="un7fff" halign="left" position="842,103" render="Label" size="272,25" source="ServiceEvent" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget backgroundColor="background2" font="Regular;19" position="842,489" render="Label" size="67,22" source="ServiceEvent" transparent="1">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">
-      </convert>
-    </widget>
-    <widget backgroundColor="background2" font="Regular;19" position="1082,488" render="Label" size="75,22" source="ServiceEvent" transparent="1">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format: %H:%M</convert>
-    </widget>
-    <widget backgroundColor="background2" borderColor="grey" borderWidth="1" position="931,493" render="Progress" size="140,12" source="ServiceEvent" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <widget backgroundColor="background2" font="Regular;18" position="841,151" render="Label" size="379,333" source="ServiceEvent" transparent="1">
+    <widget backgroundColor="transparent2" position="842,306" render="Pig" size="385,292" source="session.VideoPicture" zPosition="3" />
+    <widget backgroundColor="background2" font="Regular;18" position="842,142" render="Label" size="379,149" source="ServiceEvent" transparent="1">
       <convert type="EventNameExtra">FullDescription</convert>
     </widget>
-    <widget backgroundColor="background2" foregroundColor="un7fff" font="Regular;18" position="835,522" render="RendNextEvent" size="379,77" source="ServiceEvent" transparent="1" />
     <widget backgroundColor="background2" font="Regular;22" foregroundColor="red" halign="left" position="850,646" render="TranspService" size="374,51" source="ServiceEvent" transparent="1" valign="center" />
     <ePixmap alphatest="blend" pixmap="AmikoSkin/buttons/red.png" position="63,662" size="24,24" zPosition="1" />
     <ePixmap alphatest="blend" pixmap="AmikoSkin/buttons/green.png" position="262,662" size="24,24" zPosition="1" />
