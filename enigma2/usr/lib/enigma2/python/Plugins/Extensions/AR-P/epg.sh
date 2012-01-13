@@ -32,5 +32,5 @@
 		echo "=============================================="
 		echo " "
 		echo "Enjoy -:) "
-		sleep 5
+		sleep 1
 		killall -9 enigma2 >/dev/null 2>&1
