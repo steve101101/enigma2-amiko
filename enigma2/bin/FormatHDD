@@ -1,0 +1,20 @@
+#!/bin/sh
+
+echo $LINE 
+echo Please Wait
+echo $LINE
+
+fdisk -l
+swapoff /media/hdd > /dev/null 2>&1
+swapoff /media/sda1 > /dev/null 2>&1
+swapoff /media/sda2 > /dev/null 2>&1
+umount -f /media/hdd > /dev/null 2>&1
+umount -f /media/sda1 > /dev/null 2>&1
+umount -f /media/sda2 > /dev/null 2>&1
+umount -f /dev/sda1 > /dev/null 2>&1
+umount -f /dev/sda2 > /dev/null 2>&1
+mkfs.ext3 -F /dev/sda1
+mkfs.ext3 -F /dev/sda2
+
+killall enigma2
+exit 0
