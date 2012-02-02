@@ -78,4 +78,20 @@ from Plugins.Extensions.MultiQuickButton.plugin import *
 self.session.open(MultiQuickButton)
 ]]></code>
       </plugin>
+      <entry name="Devicemanager &gt;" shortcut="green" help="(green) MountFormatHDD" >
+<plugin name="MountHDD" target="" shortcut="1" help="select MountHDD" exit="no">
+<code><![CDATA[
+from Screens.MountHDD import MountHDD
+self.session.open (MountHDD)
+]]></code>
+      </plugin>
+<plugin name="FormatHDD" target="" shortcut="2" help="select FormatHDD" exit="no">
+<code><![CDATA[
+from Screens.MountHDD import FormatHDD
+self.session.open (FormatHDD)
+]]></code>
+      </plugin>
+      <usersh name="PiconMount" target="/usr/script/PiconMount.sh" confirmation="true" shortcut="3" help="(3) PiconMount"  exit="no">
+                </usersh>
+      </entry>
  </menu>
