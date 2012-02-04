@@ -1,5 +1,10 @@
 #!/bin/sh
-
+fdisk -l
+umount -f /media/hdd > /dev/null 2>&1
+umount -f /media/sda1 > /dev/null 2>&1
+umount -f /media/sda2 > /dev/null 2>&1
+umount -f /dev/sda1 > /dev/null 2>&1
+umount -f /dev/sda2 > /dev/null 2>&1
 mount /dev/sda1 /media/hdd > /dev/null 2>&1
 mount /dev/sda2 /media/hdd > /dev/null 2>&1
 

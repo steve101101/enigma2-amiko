@@ -16,5 +16,8 @@ umount -f /dev/sda2 > /dev/null 2>&1
 mkfs.ext3 -F /dev/sda1
 mkfs.ext3 -F /dev/sda2
 
+mount /dev/sda1 /media/hdd > /dev/null 2>&1
+mount /dev/sda2 /media/hdd > /dev/null 2>&1
+
 killall enigma2
 exit 0
