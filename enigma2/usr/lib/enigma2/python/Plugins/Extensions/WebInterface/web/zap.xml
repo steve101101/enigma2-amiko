@@ -1,5 +1,0 @@
-<e2:screen name="ServiceWebScreen">
-	<e2:element source="SwitchService" id="sRef">
-		<e2:convert type="web:ReturnEmptyXML" />
-	</e2:element>
-</e2:screen>
