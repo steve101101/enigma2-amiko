@@ -1,0 +1,32 @@
+#######/bin/sh
+	WLAN_MODULE=
+	MEM=$IFS
+	IFS=$'\012'
+	echo "[wlan] searching wireless-module ..."
+	USBIDS=`cat /proc/bus/usb/devices | grep ^P:`
+	if [ -f /etc/Wireless/wlan_module ]; then
+		WLAN_MODULE=`cat /etc/Wireless/wlan_module | awk {'print $1'}`
+		VID=`cat /etc/Wireless/wlan_module | awk {'print $2'}`
+		PID=`cat /etc/Wireless/wlan_module | awk {'print $3'}`
+	fi
+	if [ -z $WLAN_MODULE ] || [ -z "`echo $USBIDS | grep $VID | grep $PID`" ]; then
+		for i in $USBIDS; do
+			VID=`echo $i | awk {'print $2'} | cut -d"=" -f2`
+			PID=`echo $i | awk {'print $3'} | cut -d"=" -f2`
+			WLAN_MODULE=
+			for j in `cat /etc/Wireless/wlan.usbmap`; do
+				if [ `echo $j | awk {'print $3'}` == 0x$VID ] && [ `echo $j | awk {'print $4'}` == 0x$PID ]; then
+					WLAN_MODULE=`echo $j | awk {'print $1'}`
+					break
+				fi
+			done
+			[ ! -z $WLAN_MODULE ] && break
+		done
+		[ ! -z $WLAN_MODULE ] && echo $WLAN_MODULE $VID $PID > /etc/Wireless/wlan_module || rm -f /etc/Wireless/wlan_module
+	fi
+	[ -z $WLAN_MODULE ] && echo "[wlan] no applicable USB WLAN device found" | tee -a $WLAN_LOG && return
+	IFS=$MEM
+	echo "[wlan] loading $WLAN_MODULE.ko" 
+	[ $WLAN_MODULE == "rt73" ] && insmod /lib/modules/rt2x00lib.ko && insmod /lib/modules/rt2x00usb.ko
+	insmod /lib/modules/$WLAN_MODULE.ko
+	sleep 1

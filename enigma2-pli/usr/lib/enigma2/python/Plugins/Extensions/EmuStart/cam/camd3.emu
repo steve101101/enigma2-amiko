@@ -1,0 +1,6 @@
+#Camd3
+
+emuname =Camd3
+binname =camd3
+startcam =/usr/bin/cam/camd3 /var/keys/camd3.config > /dev/null  && echo "Camd3 activated" || echo "Camd3 error"
+stopcam =killall -9 camd3

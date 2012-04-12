@@ -1,0 +1,6 @@
+#Oscam
+
+emuname =Oscam
+binname =oscam
+startcam =/usr/bin/cam/oscam -b -c /var/etc/oscam > /dev/null  && echo "oscam activated" || echo "oscam error"
+stopcam =killall -9 oscam

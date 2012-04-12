@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- blackpanel.xml  example -->
+
+<menu name="AR-Panel" halign="center">
+      <plugin name="ScriptStart" target="" shortcut="1" help="(1) select ScriptStart" exit="no">
+<code><![CDATA[
+from Screens.ScriptStart import ScriptStart
+self.session.open (ScriptStart)
+]]></code>
+      </plugin> 
+<plugin name="EPGstart" target="" shortcut="2" help="(2) Download EPG" exit="no">
+<code><![CDATA[
+from Plugins.Extensions.QuickEPG.plugin import *
+self.session.open (QuickEPGPlugin)
+]]></code>
+      </plugin>
+<plugin name="EmuStart" target="" shortcut="3" help="(3) EmuStart" exit="no">	
+<code><![CDATA[
+from Plugins.Extensions.EmuStart.plugin import *
+self.session.open(EmuStart)
+]]></code>
+	</plugin>		
+    <entry name="System &gt;" shortcut="4" help="(4) System" >					
+    <usersh name="KernelVersion" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/KernelVersion.sh" confirmation="true" shortcut="1" help="(1) KernelVersion"  exit="no">
+			</usersh>
+    <usersh name="Show Process List" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Process_List.sh" confirmation="true" shortcut="2" help="(2) Process_List"  exit="no">
+			</usersh>
+	   <usersh name="FileSystems" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/FileSystems.sh" confirmation="true" shortcut="3" help="(3) FileSystems"  exit="no">
+			</usersh>
+     <usersh name="CPU" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/CPU.sh" confirmation="true" shortcut="4" help="(4) CPU"  exit="no">
+			</usersh>			             
+     <usersh name="Network Test" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Network.sh" confirmation="true" shortcut="5" help="Performance_Network_Internet"  exit="no">
+			</usersh>     
+     <usersh name="Delete_all_crashlogs" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Delete_Crashlogs.sh" confirmation="true" shortcut="6" help="Delete_all_crashlogs"  exit="no">
+			</usersh>
+			</entry>  
+           <entry name="PiconConfig >" shortcut="5" help="(5)EpgStart" >
+	      <usersh name="PiconFlasch" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/picon_load.sh" confirmation="true" shortcut="1" help="(1) PiconFlasch"  exit="no">
+			</usersh>
+               <usersh name="PiconHdd" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/picon_loadhdd.sh" confirmation="true" shortcut="2" help="(2) PiconHdd"  exit="no">
+			</usersh>	
+		   </entry>  
+               <entry name="SETTINGS >" shortcut="6" help="(7)SETTINGS" >
+	      <usersh name="Gensh-4sat" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/gensh4sat.sh" confirmation="true" shortcut="1" help="(1) Gensh-4sat"  exit="no">
+			</usersh>
+               <usersh name="Gensh-astra" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/gensh_astra.sh" confirmation="true" shortcut="2" help="(2) Gensh-astra"  exit="no">
+			</usersh>
+               <usersh name="Settings-standart" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Settings.sh" confirmation="true" shortcut="3" help="(3) Settings-standart"  exit="no">
+			</usersh>
+               <usersh name="Settings_jodasa" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/Settings_jodasa.sh" confirmation="true" shortcut="4" help="(4) Settings_jodasa"  exit="no">
+			</usersh>	
+		   </entry> 
+               <entry name="Backup >" shortcut="7" help="(7)Backup" >
+	      <plugin name="FlashBackup" target="" shortcut="1" help="(1) select PluginManager" exit="no">
+<code><![CDATA[
+from Screens.FlashBackup import FlashBackup
+self.session.open (FlashBackup)
+]]></code>
+      </plugin>	
+               <usersh name="BackupEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/BackupEnigma2Settings.sh" confirmation="true" shortcut="2" help="(2) BackupEnigma2Settings"  exit="no">
+			</usersh>
+               <usersh name="RestoreEnigma2Settings" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/RestoreEnigma2Settings.sh" confirmation="true" shortcut="3" help="(3) RestoreEnigma2Settings"  exit="no">
+                    </usersh>
+		   </entry>
+                         <entry name="PluginTools &gt;" shortcut="8" help="(8) PluginTools">
+<plugin name="PluginManager" target="" shortcut="1" help="(1) select PluginManager" exit="no">
+<code><![CDATA[
+from Screens.PluginBrowser import PluginBrowser
+self.session.open (PluginBrowser)
+]]></code>
+      </plugin>  
+                <usersh name="Ipkginstall from tmp" target="/usr/lib/enigma2/python/Plugins/Extensions/AR-P/ipkginstall.sh" confirmation="true" shortcut="9" help="(9) Ipkginstall"  exit="no">
+                </usersh> 
+                </entry>   	        
+             <plugin name="MultiQuickButton" target="" shortcut="9" help="start MultiQuickButton " exit="no">	
+<code><![CDATA[
+from Plugins.Extensions.MultiQuickButton.plugin import *
+self.session.open(MultiQuickButton)
+]]></code>
+      </plugin>
+      <entry name="Devicemanager &gt;" shortcut="green" help="(green) MountFormatHDD" >
+<plugin name="MountHDD" target="" shortcut="1" help="select MountHDD" exit="no">
+<code><![CDATA[
+from Screens.MountHDD import MountHDD
+self.session.open (MountHDD)
+]]></code>
+      </plugin>
+<plugin name="FormatHDD" target="" shortcut="2" help="select FormatHDD" exit="no">
+<code><![CDATA[
+from Screens.MountHDD import FormatHDD
+self.session.open (FormatHDD)
+]]></code>
+      </plugin>
+      <usersh name="PiconMount" target="/usr/script/PiconMount.sh" confirmation="true" shortcut="3" help="(3) PiconMount"  exit="no">
+                </usersh>
+      </entry>
+ </menu>

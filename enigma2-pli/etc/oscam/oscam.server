@@ -1,0 +1,19 @@
+[reader]
+label = reader
+enable = 1
+protocol = internal
+device = /dev/sci0
+services = hdplus
+caid = 1830
+boxid = 12345678
+rsakey = BF358B5461863130686FC933FB541FFCED682F3680F09DBC1A23829FB3B2F766B9DD1BF3B3ECC9AD6661B753DCC3A9624156F9EB64E8168EF09E4D9C5CCA4DD5
+boxkey = A7642F57BC96D37C
+detect = cd
+mhz = 357
+cardmhz = 357
+ident = 0000:000000,003411,008011
+group = 1
+emmcache = 1,2,3
+lb_weight = 100
+
+

@@ -1,0 +1,6 @@
+#CCcam
+
+emuname =CCcam
+binname =CCcam
+startcam =/usr/bin/cam/CCcam > /dev/null  && echo "CCcam activated" || echo "CCcam error"
+stopcam =killall -9 CCcam
