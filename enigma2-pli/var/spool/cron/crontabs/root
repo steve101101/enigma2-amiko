@@ -1,2 +1,0 @@
-* * * * * if [ `cat /proc/stb/avs/0/input` = scart ]; then  date +%H%M > /dev/vfd; fi
-* 23 * * 1 
